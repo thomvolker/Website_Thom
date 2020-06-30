@@ -31,6 +31,23 @@ subtitle = ""
   icon_pack = "fas"
   name = "Photography"
   description = "10%"
+  
+[design.background]
+  # Apply a background color, gradient, or image.
+  #   Uncomment (by removing `#`) an option to apply it.
+  #   Choose a light or dark text color by setting `text_color_light`.
+  #   Any HTML color name or Hex value is valid.
+
+  # Background color.
+  # color = "navy"
+  
+  # Background gradient.
+  gradient_start = "#fff"
+  gradient_end = "#fafafa"
+
+  # Text color (true=light or false=dark).
+  # text_color_light = false  
+
 
 # Uncomment to use emoji icons.
 # [[feature]]

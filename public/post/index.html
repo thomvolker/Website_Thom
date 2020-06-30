@@ -20,14 +20,16 @@
   
   
 
-  <meta name="author" content="Nelson Bighetti">
+  <meta name="author" content="Thom Volker">
 
   
   
   
     
   
-  <meta name="description" content="Professor of Artificial Intelligence">
+  <meta name="description" content="Statistics • Data Science • Missing Data • Statistical Evidence Synthesis 
+
+ Student Assistent">
 
   
   <link rel="alternate" hreflang="en-us" href="/post/">
@@ -38,10 +40,13 @@
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#17475f">
   
 
   
+  
+  
+  <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -68,8 +73,6 @@
       
     
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
     
@@ -173,9 +176,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -191,7 +194,7 @@
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:wght@300&display=swap">
   
 
   
@@ -216,8 +219,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu08bbbb5f97cb4c77d3c8aa3ac127bf8a_357044_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu08bbbb5f97cb4c77d3c8aa3ac127bf8a_357044_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/post/">
 
@@ -229,18 +232,19 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Thom Volker">
   <meta property="og:url" content="/post/">
   <meta property="og:title" content="Posts | Thom Volker">
-  <meta property="og:description" content="Professor of Artificial Intelligence"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Statistics • Data Science • Missing Data • Statistical Evidence Synthesis 
+
+ Student Assistent"><meta property="og:image" content="/img/avatar.jpeg">
+  <meta property="twitter:image" content="/img/avatar.jpeg"><meta property="og:locale" content="en-us">
   
-    <meta property="og:updated_time" content="2019-07-12T00:00:00&#43;00:00">
+    
   
 
   
@@ -357,7 +361,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#hero"><span>Demo</span></a>
+          <a class="nav-link " href="/#about"><span>Home</span></a>
         </li>
 
         
@@ -377,16 +381,9 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
 
         <li class="nav-item">
-          <a class="nav-link " href="/#posts"><span>Posts</span></a>
+          <a class="nav-link  active" href="/post/"><span>Posts</span></a>
         </li>
 
         
@@ -406,16 +403,9 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/project/"><span>Projects</span></a>
         </li>
 
         
@@ -435,16 +425,9 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured"><span>Publications</span></a>
+          <a class="nav-link " href="/publication/"><span>Publications</span></a>
         </li>
 
         
@@ -477,25 +460,16 @@
         
         
         
-          
-        
 
         
         
         
         
         
-        
-          
-          
-          
-            
-          
-          
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+          <a class="nav-link " href="/cv/"><span>CV</span></a>
         </li>
 
         
@@ -514,23 +488,6 @@
       </li>
       
 
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
       
 
       
@@ -598,6 +555,93 @@
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
+      <a href="/post/thomvolkerpsychometrics/" >Psychometrics Assignment 2 - Societal Data Analytics</a>
+    </h3>
+
+    
+    <a href="/post/thomvolkerpsychometrics/" class="summary-link">
+      <div class="article-style">
+        Introduction Fake news poses problems to present-day societies, and in some instances, it can even become dangerous, for example when people believe in the relationship between vaccines and autism. Multiple sites exist that fact-check online sources of information with regard to whether the provided information was real or fake.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 30, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+    
+  
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
       <a href="/post/writing-technical-content/" >Writing technical content in Academic</a>
     </h3>
 
@@ -628,8 +672,10 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
       
+          Last updated on
+      
     
-    Jul 12, 2019
+    Jun 29, 2020
   </span>
   
 
@@ -662,7 +708,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
     <a href="/post/writing-technical-content/" >
-      <img src="/post/writing-technical-content/featured_huc72159e0fc0d14b85f60d34436a630f0_266353_150x0_resize_q90_lanczos.jpg" alt="Writing technical content in Academic">
+      <img src="/post/writing-technical-content/featured_huc72159e0fc0d14b85f60d34436a630f0_266353_150x0_resize_q100_lanczos.jpg" alt="Writing technical content in Academic">
     </a>
     
   </div>
@@ -720,7 +766,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   
-  <span ><a href="/author/nelson-bighetti/">Nelson Bighetti</a></span>
+  <span ><a href="/author/admin/">admin</a></span>
   </div>
   
   
@@ -733,7 +779,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
           Last updated on
       
     
-    Sep 5, 2019
+    Jun 29, 2020
   </span>
   
 
@@ -824,7 +870,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   
-  <span ><a href="/author/nelson-bighetti/">Nelson Bighetti</a></span>, <span ><a href="/author/%E5%90%B3%E6%81%A9%E9%81%94/">吳恩達</a></span>
+  <span ><a href="/author/admin/">admin</a></span>, <span ><a href="/author/%E5%90%B3%E6%81%A9%E9%81%94/">吳恩達</a></span>
   </div>
   
   
@@ -837,7 +883,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
           Last updated on
       
     
-    Apr 17, 2019
+    Jun 29, 2020
   </span>
   
 
@@ -874,7 +920,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
     <a href="/post/getting-started/" >
-      <img src="/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_150x0_resize_q90_lanczos.jpg" alt="Academic: the website builder for Hugo">
+      <img src="/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_150x0_resize_q100_lanczos.jpg" alt="Academic: the website builder for Hugo">
     </a>
     
   </div>
@@ -932,8 +978,10 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
       
+          Last updated on
+      
     
-    Jul 23, 2015
+    Jun 29, 2020
   </span>
   
 
@@ -973,6 +1021,94 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
 
     
   
+    
+      
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
+      <a href="/post/empty_post/" >New Post I</a>
+    </h3>
+
+    
+    <a href="/post/empty_post/" class="summary-link">
+      <div class="article-style">
+         New post This is a new post without any information.
+ 
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jan 1, 0001
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    1 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+    
+  
 
   
 
@@ -990,6 +1126,8 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
+      
 
       
         
@@ -1002,8 +1140,6 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
     
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
     
 
     

@@ -20,14 +20,16 @@
   
   
 
-  <meta name="author" content="Nelson Bighetti">
+  <meta name="author" content="Thom Volker">
 
   
   
   
     
   
-  <meta name="description" content="Professor of Artificial Intelligence">
+  <meta name="description" content="Statistics • Data Science • Missing Data • Statistical Evidence Synthesis 
+
+ Student Assistent">
 
   
   <link rel="alternate" hreflang="en-us" href="/">
@@ -38,10 +40,13 @@
   
   
   
-  <meta name="theme-color" content="#2962ff">
+  <meta name="theme-color" content="#17475f">
   
 
   
+  
+  
+  <script src="/js/mathjax-config.js"></script>
   
 
   
@@ -68,8 +73,6 @@
       
     
 
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.css" integrity="sha256-SHMGCYmST46SoyGgo4YR/9AlK1vf3ff84Aq9yK4hdqM=" crossorigin="anonymous">
     
 
     
@@ -173,9 +176,9 @@
 
       
       
-        
-      
 
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js" integrity="" crossorigin="anonymous" async></script>
       
     
       
@@ -191,7 +194,7 @@
   
   
   
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:wght@300&display=swap">
   
 
   
@@ -218,8 +221,8 @@
   
 
   <link rel="manifest" href="/index.webmanifest">
-  <link rel="icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png">
-  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png">
+  <link rel="icon" type="image/png" href="/images/icon_hu08bbbb5f97cb4c77d3c8aa3ac127bf8a_357044_32x32_fill_lanczos_center_2.png">
+  <link rel="apple-touch-icon" type="image/png" href="/images/icon_hu08bbbb5f97cb4c77d3c8aa3ac127bf8a_357044_192x192_fill_lanczos_center_2.png">
 
   <link rel="canonical" href="/">
 
@@ -231,16 +234,17 @@
   
   
     
-    
   
   
-  <meta property="twitter:card" content="summary">
+  <meta property="twitter:card" content="summary_large_image">
   
   <meta property="og:site_name" content="Thom Volker">
   <meta property="og:url" content="/">
   <meta property="og:title" content="Thom Volker">
-  <meta property="og:description" content="Professor of Artificial Intelligence"><meta property="og:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png"><meta property="og:locale" content="en-us">
+  <meta property="og:description" content="Statistics • Data Science • Missing Data • Statistical Evidence Synthesis 
+
+ Student Assistent"><meta property="og:image" content="/img/avatar.jpeg">
+  <meta property="twitter:image" content="/img/avatar.jpeg"><meta property="og:locale" content="en-us">
   
     <meta property="og:updated_time" content="2030-06-01T13:00:00&#43;00:00">
   
@@ -373,7 +377,7 @@
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#hero" data-target="#hero"><span>Demo</span></a>
+          <a class="nav-link " href="/#about" data-target="#about"><span>Home</span></a>
         </li>
 
         
@@ -393,16 +397,9 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
 
         <li class="nav-item">
-          <a class="nav-link " href="/#posts" data-target="#posts"><span>Posts</span></a>
+          <a class="nav-link " href="/post/"><span>Posts</span></a>
         </li>
 
         
@@ -422,16 +419,9 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
 
         <li class="nav-item">
-          <a class="nav-link " href="/#projects" data-target="#projects"><span>Projects</span></a>
+          <a class="nav-link " href="/project/"><span>Projects</span></a>
         </li>
 
         
@@ -451,16 +441,9 @@
         
         
         
-          
-          
-          
-            
-          
-          
-        
 
         <li class="nav-item">
-          <a class="nav-link " href="/#featured" data-target="#featured"><span>Publications</span></a>
+          <a class="nav-link " href="/publication/"><span>Publications</span></a>
         </li>
 
         
@@ -493,25 +476,16 @@
         
         
         
-          
-        
 
         
         
         
         
         
-        
-          
-          
-          
-            
-          
-          
         
 
         <li class="nav-item">
-          <a class="nav-link " href="/#contact" data-target="#contact"><span>Contact</span></a>
+          <a class="nav-link " href="/cv/"><span>CV</span></a>
         </li>
 
         
@@ -530,23 +504,6 @@
       </li>
       
 
-      
-      <li class="nav-item dropdown theme-dropdown">
-        <a href="#" class="nav-link js-theme-selector" data-toggle="dropdown" aria-haspopup="true">
-          <i class="fas fa-palette" aria-hidden="true"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a href="#" class="dropdown-item js-set-theme-light">
-            <span>Light</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-dark">
-            <span>Dark</span>
-          </a>
-          <a href="#" class="dropdown-item js-set-theme-auto">
-            <span>Automatic</span>
-          </a>
-        </div>
-      </li>
       
 
       
@@ -590,6 +547,151 @@
   
 
   
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+    
+    
+    
+  
+
+  <section id="slider" class="home-section wg-slider    carousel slide"  data-ride="carousel" data-interval="false">
+    
+      
+
+
+
+
+<ol class="carousel-indicators">
+  
+  <li data-target="#slider" data-slide-to="0" class="active"></li>
+  
+  <li data-target="#slider" data-slide-to="1" ></li>
+  
+  <li data-target="#slider" data-slide-to="2" ></li>
+  
+</ol>
+
+
+<div class="carousel-inner">
+  
+  <div class="wg-hero dark carousel-item active" style="
+    
+    background-color: #666;
+    
+    
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+    url('/img/headers/bubbles-wide.jpg');
+    
+    ;">
+    <div class="container" style="text-align: center;">
+        <h1 class="hero-title">
+          Hello
+        </h1>
+
+        
+        <p class="hero-lead" style="margin: 0 auto 0 auto;">
+          I am center aligned 😄
+        </p>
+        
+
+        
+        
+        
+        
+          
+        
+        <p>
+          <a href="https://sourcethemes.com/academic/" class="btn btn-light btn-lg"><i class="fas fa-graduation-cap" style="padding-right: 10px;"></i>Get Academic</a>
+        </p>
+        
+      </div>
+  </div>
+  
+  <div class="wg-hero dark carousel-item" style="
+    
+    background-color: #555;
+    
+    
+    ;">
+    <div class="container" style="text-align: left;">
+        <h1 class="hero-title">
+          Left
+        </h1>
+
+        
+        <p class="hero-lead" style="">
+          I am left aligned 😄
+        </p>
+        
+
+        
+      </div>
+  </div>
+  
+  <div class="wg-hero dark carousel-item" style="
+    
+    background-color: #333;
+    
+    
+    ;">
+    <div class="container" style="text-align: right;">
+        <h1 class="hero-title">
+          Right
+        </h1>
+
+        
+        <p class="hero-lead" style="margin-left: auto; margin-right: 0">
+          I am right aligned 😄
+        </p>
+        
+
+        
+      </div>
+  </div>
+  
+</div>
+
+
+<a class="carousel-control-prev" href="#slider" data-slide="prev">
+  <span class="carousel-control-prev-icon"></span>
+  <span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#slider" data-slide="next">
+  <span class="carousel-control-next-icon"></span>
+  <span class="sr-only">Next</span>
+</a>
+
+    
+  </section>
+
+  
+  
+  
+
+  
+
+  
     
   
 
@@ -615,7 +717,7 @@
   
   
 
-  <section id="hero" class="home-section wg-hero dark  " style="background-image: linear-gradient(#4bb4e3, #2b94c3);" >
+  <section id="hero" class="home-section wg-hero   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -651,7 +753,7 @@
         
       
     <p class="cta-btns">
-      <a href="https://sourcethemes.com/academic/docs/install/" target="_blank" rel="noopener" class="btn btn-light btn-lg"><i class="fas fa-download pr-1" aria-hidden="true"></i>Get Started</a>
+      <a href="https://sourcethemes.com/academic/docs/install/" target="_blank" rel="noopener" class="btn btn-primary btn-lg"><i class="fas fa-download pr-1" aria-hidden="true"></i>Get Started</a>
 
       
       
@@ -692,22 +794,9 @@
   
 
   
-
+    
   
-    
-    
-      
-    
-    
-    
-    
-      
-      
-    
-    
-      
-      
-    
+
   
 
   
@@ -733,7 +822,7 @@
   
   
 
-  <section id="demo" class="home-section wg-blank dark  bg-image parallax " style="background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(&#39;/img/headers/bubbles-wide.jpg&#39;);background-size: cover;background-position: center;padding: 20px 0 20px 0;" >
+  <section id="demo" class="home-section wg-blank dark  " style="background-image: linear-gradient(#fff, #fafafa);padding: 20px 0 20px 0;" >
     <div class="container">
       
 
@@ -773,7 +862,7 @@
   
 
   
-
+    
   
 
   
@@ -781,22 +870,24 @@
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="about" class="home-section wg-about   "  >
+  <section id="about" class="home-section wg-about   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -820,17 +911,19 @@
 
       
       
-      <img class="avatar avatar-circle" src="/author/nelson-bighetti/avatar_hu52a603635ecebd45650b162dadabb4e5_12861_270x270_fill_q90_lanczos_center.jpg" alt="Nelson Bighetti">
+      <img class="avatar avatar-circle" src="/author/thom-volker/avatar_hue7460ec653e99a756ac42ee52fc98966_599039_270x270_fill_q100_lanczos_center.jpeg" alt="Thom Volker">
       
 
       <div class="portrait-title">
-        <h2>Nelson Bighetti</h2>
-        <h3>Professor of Artificial Intelligence</h3>
+        <h2>Thom Volker</h2>
+        <h3><p>Statistics • Data Science • Missing Data • Statistical Evidence Synthesis</p>
+<p>Student Assistent</p>
+</h3>
 
         
         <h3>
           
-          <span>Stanford University</span>
+          <span>Utrecht University • CBS</span>
           
         </h3>
         
@@ -850,7 +943,7 @@
           
         
         <li>
-          <a href="/#contact" >
+          <a href="/t.b.volker@uu.nl" >
             <i class="fas fa-envelope big-icon"></i>
           </a>
         </li>
@@ -867,7 +960,7 @@
           
         
         <li>
-          <a href="https://twitter.com/GeorgeCushen" target="_blank" rel="noopener">
+          <a href="https://twitter.com/ThomVolker" target="_blank" rel="noopener">
             <i class="fab fa-twitter big-icon"></i>
           </a>
         </li>
@@ -899,8 +992,25 @@
           
         
         <li>
-          <a href="https://github.com/gcushen" target="_blank" rel="noopener">
+          <a href="https://github.com/thomvolker" target="_blank" rel="noopener">
             <i class="fab fa-github big-icon"></i>
+          </a>
+        </li>
+        
+        
+        
+        
+          
+        
+        
+        
+        
+        
+          
+        
+        <li>
+          <a href="https://www.linkedin.com/in/thom-volker-a4620415a/" target="_blank" rel="noopener">
+            <i class="fab fa-linkedin big-icon"></i>
           </a>
         </li>
         
@@ -913,8 +1023,7 @@
     
     <h1>Biography</h1>
 
-    <p>Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.</p>
+    <p>I am a second year&rsquo;s Statistics student at the UU, with an interest in</p>
 
 
     <div class="row">
@@ -924,11 +1033,15 @@
         <h3>Interests</h3>
         <ul class="ul-interests">
           
-          <li>Artificial Intelligence</li>
+          <li>Evidence Synthesis</li>
           
-          <li>Computational Linguistics</li>
+          <li>Bayesian Methods</li>
           
-          <li>Information Retrieval</li>
+          <li>Statistics</li>
+          
+          <li>Data Science</li>
+          
+          <li>Programming</li>
           
         </ul>
       </div>
@@ -942,24 +1055,24 @@
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">PhD in Artificial Intelligence, 2012</p>
-              <p class="institution">Stanford University</p>
+              <p class="course">MSc in Methods and Statistics for the Behavioural, Biomedical and Social Sciences, 2022</p>
+              <p class="institution">Utrecht University</p>
             </div>
           </li>
           
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">MEng in Artificial Intelligence, 2009</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
+              <p class="course">MSc in Sociology and Social Research, 2022</p>
+              <p class="institution">Utrecht University</p>
             </div>
           </li>
           
           <li>
             <i class="fa-li fas fa-graduation-cap"></i>
             <div class="description">
-              <p class="course">BSc in Artificial Intelligence, 2008</p>
-              <p class="institution">Massachusetts Institute of Technology</p>
+              <p class="course">BA in Liberal Arts &amp; Sciences, 2008</p>
+              <p class="institution">Utrecht University</p>
             </div>
           </li>
           
@@ -981,7 +1094,7 @@
   
 
   
-
+    
   
 
   
@@ -989,22 +1102,24 @@
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="skills" class="home-section wg-featurette   "  >
+  <section id="skills" class="home-section wg-featurette   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -1071,7 +1186,7 @@
   
 
   
-
+    
   
 
   
@@ -1079,22 +1194,24 @@
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="experience" class="home-section wg-experience   "  >
+  <section id="experience" class="home-section wg-experience   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -1205,7 +1322,7 @@
   
 
   
-
+    
   
 
   
@@ -1213,22 +1330,24 @@
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="accomplishments" class="home-section wg-accomplishments   "  >
+  <section id="accomplishments" class="home-section wg-accomplishments   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -1313,7 +1432,7 @@
   
 
   
-
+    
   
 
   
@@ -1321,22 +1440,24 @@
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="posts" class="home-section wg-pages   "  >
+  <section id="posts" class="home-section wg-pages   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -1412,6 +1533,93 @@
   <div class="media-body">
 
     <h3 class="article-title mb-0 mt-0">
+      <a href="/post/thomvolkerpsychometrics/" >Psychometrics Assignment 2 - Societal Data Analytics</a>
+    </h3>
+
+    
+    <a href="/post/thomvolkerpsychometrics/" class="summary-link">
+      <div class="article-style">
+        Introduction Fake news poses problems to present-day societies, and in some instances, it can even become dangerous, for example when people believe in the relationship between vaccines and autism. Multiple sites exist that fact-check online sources of information with regard to whether the provided information was real or fake.
+      </div>
+    </a>
+    
+
+    <div class="stream-meta article-metadata">
+
+      
+
+      
+        
+
+
+<div class="article-metadata">
+
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    Jun 30, 2020
+  </span>
+  
+
+  
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    9 min read
+  </span>
+  
+
+  
+  
+  
+
+  
+  
+
+</div>
+
+      
+    </div>
+
+    
+
+  </div>
+  <div class="ml-3">
+    
+    
+  </div>
+</div>
+
+      
+    
+      
+        
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+<div class="media stream-item">
+  <div class="media-body">
+
+    <h3 class="article-title mb-0 mt-0">
       <a href="/post/writing-technical-content/" >Writing technical content in Academic</a>
     </h3>
 
@@ -1442,8 +1650,10 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
       
+          Last updated on
+      
     
-    Jul 12, 2019
+    Jun 29, 2020
   </span>
   
 
@@ -1476,7 +1686,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
     <a href="/post/writing-technical-content/" >
-      <img src="/post/writing-technical-content/featured_huc72159e0fc0d14b85f60d34436a630f0_266353_150x0_resize_q90_lanczos.jpg" alt="Writing technical content in Academic">
+      <img src="/post/writing-technical-content/featured_huc72159e0fc0d14b85f60d34436a630f0_266353_150x0_resize_q100_lanczos.jpg" alt="Writing technical content in Academic">
     </a>
     
   </div>
@@ -1534,7 +1744,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   
-  <span ><a href="/author/nelson-bighetti/">Nelson Bighetti</a></span>
+  <span ><a href="/author/admin/">admin</a></span>
   </div>
   
   
@@ -1547,7 +1757,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
           Last updated on
       
     
-    Sep 5, 2019
+    Jun 29, 2020
   </span>
   
 
@@ -1638,7 +1848,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   
-  <span ><a href="/author/nelson-bighetti/">Nelson Bighetti</a></span>, <span ><a href="/author/%E5%90%B3%E6%81%A9%E9%81%94/">吳恩達</a></span>
+  <span ><a href="/author/admin/">admin</a></span>, <span ><a href="/author/%E5%90%B3%E6%81%A9%E9%81%94/">吳恩達</a></span>
   </div>
   
   
@@ -1651,7 +1861,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
           Last updated on
       
     
-    Apr 17, 2019
+    Jun 29, 2020
   </span>
   
 
@@ -1688,7 +1898,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
     <a href="/post/getting-started/" >
-      <img src="/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_150x0_resize_q90_lanczos.jpg" alt="Academic: the website builder for Hugo">
+      <img src="/post/getting-started/featured_hub9ee31969f44a6711206a2baf9f065b4_241861_150x0_resize_q100_lanczos.jpg" alt="Academic: the website builder for Hugo">
     </a>
     
   </div>
@@ -1746,8 +1956,10 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
       
+          Last updated on
+      
     
-    Jul 23, 2015
+    Jun 29, 2020
   </span>
   
 
@@ -1789,6 +2001,13 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
     
+    <div class="see-all">
+      <a href="/post/">
+        See all posts
+        <i class="fas fa-angle-right"></i>
+      </a>
+    </div>
+    
 
   </div>
 </div>
@@ -1803,7 +2022,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
-
+    
   
 
   
@@ -1811,22 +2030,24 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="projects" class="home-section wg-portfolio   "  >
+  <section id="projects" class="home-section wg-portfolio   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -2145,6 +2366,336 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
+    
+  
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+  
+
+  <section id="people" class="home-section wg-people   " style="background-image: linear-gradient(#fff, #fafafa);" >
+    <div class="container">
+      
+
+
+
+
+
+
+
+<div class="row justify-content-center people-widget">
+  
+  <div class="col-md-12 section-heading">
+    <h1>Team</h1>
+    
+  </div>
+  
+
+  
+
+  
+  
+
+  
+
+  
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Researchers</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/author/thom-volker/"><img class="avatar avatar-circle" src="/author/thom-volker/avatar_hue7460ec653e99a756ac42ee52fc98966_599039_270x270_fill_q100_lanczos_center.jpeg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/author/thom-volker/">Thom Volker</a></h2>
+      <h3><p>Statistics • Data Science • Missing Data • Statistical Evidence Synthesis</p>
+<p>Student Assistent</p>
+</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/t.b.volker@uu.nl" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThomVolker" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/thomvolker" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/thom-volker-a4620415a/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+  
+  
+  
+
+  
+
+  
+  
+  
+
+  
+  <div class="col-md-12">
+    <h2 class="mb-4">Visitors</h2>
+  </div>
+  
+
+  
+  
+  
+  
+  
+    
+  
+  <div class="col-12 col-sm-auto people-person">
+    
+    
+      
+      
+    
+    
+      
+      <a href="/author/thom-volker/"><img class="avatar avatar-circle" src="/author/thom-volker/avatar_hue7460ec653e99a756ac42ee52fc98966_599039_270x270_fill_q100_lanczos_center.jpeg" alt="Avatar"></a>
+    
+
+    <div class="portrait-title">
+      <h2><a href="/author/thom-volker/">Thom Volker</a></h2>
+      <h3><p>Statistics • Data Science • Missing Data • Statistical Evidence Synthesis</p>
+<p>Student Assistent</p>
+</h3>
+      <ul class="network-icon" aria-hidden="true">
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="/t.b.volker@uu.nl" >
+        <i class="fas fa-envelope"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://twitter.com/ThomVolker" target="_blank" rel="noopener">
+        <i class="fab fa-twitter"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ" target="_blank" rel="noopener">
+        <i class="ai ai-google-scholar"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://github.com/thomvolker" target="_blank" rel="noopener">
+        <i class="fab fa-github"></i>
+      </a>
+    </li>
+  
+    
+    
+    
+      
+    
+    
+    
+    
+    
+      
+    
+    <li>
+      <a href="https://www.linkedin.com/in/thom-volker-a4620415a/" target="_blank" rel="noopener">
+        <i class="fab fa-linkedin"></i>
+      </a>
+    </li>
+  
+</ul>
+
+      
+    </div>
+  </div>
+  
+  
+  
+
+  
+
+  
+  
+</div>
+
+    </div>
+  </section>
+
+  
+  
+  
+
+  
+
+  
+    
+  
 
   
 
@@ -2168,7 +2719,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
   
 
-  <section id="talks" class="home-section wg-pages   "  >
+  <section id="talks" class="home-section wg-pages   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -2263,7 +2814,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
       
       <div>
         <span>
-          Jun 1, 2030 1:00 PM &mdash; 3:00 PM
+          Jun 1, 2030 13:00 &mdash; 15:00
         </span>
         
         <span class="middot-divider"></span>
@@ -2341,7 +2892,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
     <a href="/talk/example/" >
-      <img src="/talk/example/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_620088_150x0_resize_q90_lanczos.jpg" alt="Example Talk">
+      <img src="/talk/example/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_620088_150x0_resize_q100_lanczos.jpg" alt="Example Talk">
     </a>
     
   </div>
@@ -2365,7 +2916,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
-
+    
   
 
   
@@ -2373,22 +2924,24 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="featured" class="home-section wg-featured   "  >
+  <section id="featured" class="home-section wg-featured   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -2464,7 +3017,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
   
-  <span ><a href="/author/nelson-bighetti/">Nelson Bighetti</a></span>, <span >Robert Ford</span>
+  <span ><a href="/author/admin/">admin</a></span>, <span >Robert Ford</span>
   </div>
   
   
@@ -2475,7 +3028,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
       
     
-    July 2013
+    Monday, July 1, 2013
   </span>
   
 
@@ -2653,7 +3206,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
-
+    
   
 
   
@@ -2661,22 +3214,24 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="publications" class="home-section wg-pages   "  >
+  <section id="publications" class="home-section wg-pages   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -2780,7 +3335,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
         
 
   
-  <span ><a href="/author/nelson-bighetti/">Nelson Bighetti</a></span>
+  <span ><a href="/author/admin/">admin</a></span>
       </div>
       
     </div>
@@ -2897,7 +3452,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
     <a href="/publication/preprint/" >
-      <img src="/publication/preprint/featured_hu559a5add5185b02575aa8333502ab2cc_220813_150x0_resize_q90_lanczos.jpg" alt="An example preprint / working paper">
+      <img src="/publication/preprint/featured_hu559a5add5185b02575aa8333502ab2cc_220813_150x0_resize_q100_lanczos.jpg" alt="An example preprint / working paper">
     </a>
     
   </div>
@@ -2949,7 +3504,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
         
 
   
-  <span ><a href="/author/nelson-bighetti/">Nelson Bighetti</a></span><span title="Equal contribution" class="author-notes">(?)</span>, <span >Robert Ford</span><span title="Equal contribution" class="author-notes">(?)</span>
+  <span ><a href="/author/admin/">admin</a></span><span title="Equal contribution" class="author-notes">(?)</span>, <span >Robert Ford</span><span title="Equal contribution" class="author-notes">(?)</span>
       </div>
       
     </div>
@@ -3009,7 +3564,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
     <a href="/publication/journal-article/" >
-      <img src="/publication/journal-article/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_150x0_resize_q90_lanczos.jpg" alt="An example journal article">
+      <img src="/publication/journal-article/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_214168_150x0_resize_q100_lanczos.jpg" alt="An example journal article">
     </a>
     
   </div>
@@ -3061,7 +3616,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
         
 
   
-  <span ><a href="/author/nelson-bighetti/">Nelson Bighetti</a></span>, <span >Robert Ford</span>
+  <span ><a href="/author/admin/">admin</a></span>, <span >Robert Ford</span>
       </div>
       
     </div>
@@ -3183,7 +3738,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
     
     <a href="/publication/conference-paper/" >
-      <img src="/publication/conference-paper/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_150x0_resize_q90_lanczos.jpg" alt="An example conference paper">
+      <img src="/publication/conference-paper/featured_hu3d03a01dcc18bc5be0e67db3d8d209a6_312700_150x0_resize_q100_lanczos.jpg" alt="An example conference paper">
     </a>
     
   </div>
@@ -3325,7 +3880,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
-
+    
   
 
   
@@ -3333,22 +3888,24 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
   
 
   
+
+  
+  
+
+  
+  
   
 
   
   
   
-
-  
-  
-  
   
   
 
   
   
 
-  <section id="contact" class="home-section wg-contact   "  >
+  <section id="contact" class="home-section wg-contact   " style="background-image: linear-gradient(#fff, #fafafa);" >
     <div class="container">
       
 
@@ -3373,7 +3930,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
     <div class="mb-3">
-      <form name="contact" method="POST" action="https://formspree.io/test@example.org">
+      <form name="contact" method="POST" action="https://formspree.io/t.b.volker@uu.nl">
         <div class="form-group form-inline">
           <label class="sr-only" for="inputName">Name</label>
           <input type="text" name="name" class="form-control w-100" id="inputName" placeholder="Name" required>
@@ -3398,7 +3955,7 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
       
       <li>
         <i class="fa-li fas fa-phone fa-2x" aria-hidden="true"></i>
-        <span id="person-telephone"><a href="tel:888%20888%2088%2088">888 888 88 88</a></span>
+        <span id="person-telephone"><a href="tel:Available%20upon%20request">Available upon request</a></span>
       </li>
       
 
@@ -3407,21 +3964,16 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
         
         <li>
           <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-          <span id="person-address">450 Serra Mall, Stanford, CA 94305</span>
+          <span id="person-address">Utrecht, </span>
         </li>
       
 
-      
-      <li>
-        <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
-        <span>Enter Building 1 and take the stairs to Office 200 on Floor 2</span>
-      </li>
       
 
       
       <li>
         <i class="fa-li fas fa-clock fa-2x" aria-hidden="true"></i>
-        <span>Monday 10:00 to 13:00<br>Wednesday 09:00 to 10:00</span>
+        <span>Monday - 09:00 to 17:00<br>Tuesday - 09:00 to 17:00<br>Wednesday - 09:00 to 17:00<br>Thursday - 09:00 to 17:00<br>Friday - 09:00 to 17:00</span>
       </li>
       
 
@@ -3434,81 +3986,9 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
 
       
       
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <i class="fa-li fab fa-twitter fa-2x" aria-hidden="true"></i>
-        <a href="https://twitter.com/Twitter" target="_blank" rel="noopener">DM Me</a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-      <li>
-        <i class="fa-li fab fa-skype fa-2x" aria-hidden="true"></i>
-        <a href="skype:echo123?call" >Skype Me</a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <i class="fa-li fab fa-keybase fa-2x" aria-hidden="true"></i>
-        <a href="https://keybase.io/" target="_blank" rel="noopener">Chat on Keybase</a>
-      </li>
-      
-      
-      
-      
-        
-      
-      
-      
-      
-      
-        
-      
-      <li>
-        <i class="fa-li fas fa-comments fa-2x" aria-hidden="true"></i>
-        <a href="https://discourse.gohugo.io" target="_blank" rel="noopener">Discuss on Forum</a>
-      </li>
-      
 
     </ul>
 
-    
-    <div class="d-none">
-      <input id="map-provider" value="2">
-      <input id="map-lat" value="37.4275">
-      <input id="map-lng" value="-122.1697">
-      <input id="map-dir" value="450 Serra Mall, Stanford, CA 94305">
-      <input id="map-zoom" value="15">
-      <input id="map-api-key" value="">
-    </div>
-    <div id="map"></div>
     
 
   </div>
@@ -3530,6 +4010,8 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
       <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
 
       
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mermaid/8.4.8/mermaid.min.js" integrity="sha256-lyWCDMnMeZiXRi7Zl54sZGKYmgQs4izcT7+tKc+KUBk=" crossorigin="anonymous" title="mermaid"></script>
+      
 
       
         
@@ -3542,8 +4024,6 @@ Highlight your code snippets, take notes on math classes, and draw diagrams from
     
 
     
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.5.1/leaflet.js" integrity="sha256-EErZamuLefUnbMBQbsEqu1USa+btR2oIlCpBJbyD4/g=" crossorigin="anonymous"></script>
     
 
     

@@ -47,5 +47,18 @@ date_format = "Jan 2006"
   date_start = "2017-07-01"
   date_end = "2017-12-21"
   description = ""
+  
+[design.background]
+  # Apply a background color, gradient, or image.
+  #   Uncomment (by removing `#`) an option to apply it.
+  #   Choose a light or dark text color by setting `text_color_light`.
+  #   Any HTML color name or Hex value is valid.
+
+  # Background color.
+  # color = "navy"
+  
+  # Background gradient.
+  gradient_start = "#fff"
+  gradient_end = "#fafafa"
 
 +++
