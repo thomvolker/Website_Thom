@@ -1,0 +1,18 @@
+# Theme metadata
+name = "themethom"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#17475f"
+
+# Menu
+menu_primary = "#fff"
+menu_text = "#17475f"
+menu_text_active = "#5391af"
+menu_title = "#17475f"
+
+# Home sections
+home_section_odd = "#fff"
+home_section_even = "#fff"

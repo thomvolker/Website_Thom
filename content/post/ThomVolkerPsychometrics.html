@@ -1,0 +1,576 @@
+---
+title: "Psychometrics Assignment 2 - Societal Data Analytics"
+author: "Thom Volker"
+date: "2020-06-30"
+output: html_document
+---
+
+
+
+<div id="introduction" class="section level1">
+<h1>Introduction</h1>
+<p>Fake news poses problems to present-day societies, and in some instances, it can even become dangerous, for example when people believe in the relationship between vaccines and autism. Multiple sites exist that fact-check online sources of information with regard to whether the provided information was real or fake. An algorithm that could be trained to distinguish real from fake news would make this process easier and faster. Therefore, it is attempted to construct a machine learning method that is able to distinguish fake from real news, by means of analyzing the textual data at hand.</p>
+</div>
+<div id="methods" class="section level1">
+<h1>Methods</h1>
+<p>The dataset contained 500 texts that had on average nearly 800 words, and additionally a title and a label that indicates whether or not the text was fake. Used features were word unigrams, bigrams and trigrams, and combinations of the three. It was investigated whether frequencies of certain words or combinations of words (up to a maximum length of three) were indicative of the truthfulness of the text. The data was prepared for usage by means of removing excessive white spaces, punctuation, numbers, non-ASCII characters, replacing capitals by lower case letters, removing English stopwords, and applying Porter’s stemming algorithm (to make sure that common words are identified as common words), in this specific order. Additionally, sparse terms were removed, with a maximum allowed sparsity of 0.90 in case of the unigrams, 0.95 in case of bigrams and 0.97 in case of the trigrams and combinations of unigrams, bigrams and trigrams. The training set consists of 80% of the original dataset, and is chosen at random; the remaining 20% serves as the validation data. All methods were ran with the same seed, which ensures that all methods use the same observations (texts) to build the model on.</p>
+<p>Four different methods were considered to build a model. The first one was a classification tree, the second one was a classification tree that was pruned by means of the cross-validation error based on the complexity parameter, the third model under consideration was a logistic regression model, and the fourth model was a support vector machine model. All models can handle the dichotomous outcome variable, and it was attempted to predict whether the document was real or fake in the validation data. The performance of all methods under the specified input (unigrams, bigrams, trigrams or a combination of the three) was measured by means of accuracy, sensitivity, specificity, positive predictive value (PPV), negative predictive value (NPV) and the F1-measure.</p>
+<div class="figure"><span id="fig:unnamed-chunk-2"></span>
+<img src="/post/ThomVolkerPsychometrics_files/figure-html/unnamed-chunk-2-1.png" alt="Figure 1. Wordcloud containing the most frequently occurring words in the data, after the pre-processing steps." width="2800" />
+<p class="caption">
+Figure 1: Figure 1. Wordcloud containing the most frequently occurring words in the data, after the pre-processing steps.
+</p>
+</div>
+<p>However, when the logistic model was used, the maximum allowed sparsity has to be further reduced when analyzing the unigrams, because otherwise, overfitting would be severe (to such an extent that a single variable for every model can be chosen). To avoid this problem, when unigrams were analyzed by means of the logistic regression model, the maximum allowed sparsity was reduced to 0.70. Combinations of unigrams, bigrams and trigrams were not considered, simply because bigrams and trigrams occured too infrequently in multiple texts, so that in the end, only unigrams would have been analyzed, if there is accounted for the overfitting problem.</p>
+</div>
+<div id="results" class="section level1">
+<h1>Results</h1>
+<p>The dimensions of the training and test sets were equal, except for the fact that obviously, the training data contained 400 rows, while the test data only contained 100 rows. After initially performing the analysis, it appeared that all models performed reasonable, with an accuracy of around 0.75 when the unigrams were taken into account, eventually in combination with bigrams and/or trigrams (results are mentioned in Appendix A, since they were not of primary interest). When solely bigrams and trigrams were considered, the accuracy ranged between 0.60 and 0.70. However, one of the words that occurred very often as one of the first nodes was “said”, which was not very informative, in my opinion. Therefore, I decided to exclude this word, and run the analysis again. Because removing the word ‘said’ would not make any difference with respect to bigrams and trigrams, and the models fitted on bigrams and trigrams initially did not perform that well, these two models were not considered any further.</p>
+<p>As can be seen in Table 1, considering bigrams and trigrams next to unigrams did did not strengthen the accuracy of the considered methods. Overall, the results were very similar, and only considering unigrams yielded slightly better results as compared to additionally using bigrams and trigrams. Additionally, there was nearly no difference between the performance of the considered measures. However, it is noteworthy that the sensitivity of the Pruned Classification Tree is very high, while the specificity is much lower, while in case of the regular Classification Tree, the specificity is very high, but the sensitivity is much lower.</p>
+<table>
+<caption><span id="tab:unnamed-chunk-3">Table 1: </span>Table 1: Results of the classification methods on the text only, without infrequently occurring words and without the word ‘said’</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Method</th>
+<th align="right">Accuracy</th>
+<th align="right">Sensitivity</th>
+<th align="right">Specificity</th>
+<th align="right">PPV</th>
+<th align="right">NPV</th>
+<th align="right">F1.measure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Unigrams</td>
+<td align="left">CT</td>
+<td align="right">0.71</td>
+<td align="right">0.700</td>
+<td align="right">0.725</td>
+<td align="right">0.792</td>
+<td align="right">0.617</td>
+<td align="right">0.743</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.71</td>
+<td align="right">0.700</td>
+<td align="right">0.725</td>
+<td align="right">0.792</td>
+<td align="right">0.617</td>
+<td align="right">0.743</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">LR</td>
+<td align="right">0.75</td>
+<td align="right">0.700</td>
+<td align="right">0.825</td>
+<td align="right">0.857</td>
+<td align="right">0.647</td>
+<td align="right">0.771</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.77</td>
+<td align="right">0.767</td>
+<td align="right">0.775</td>
+<td align="right">0.836</td>
+<td align="right">0.689</td>
+<td align="right">0.800</td>
+</tr>
+<tr class="odd">
+<td align="left">Unigrams+Bigrams</td>
+<td align="left">CT</td>
+<td align="right">0.65</td>
+<td align="right">0.683</td>
+<td align="right">0.600</td>
+<td align="right">0.719</td>
+<td align="right">0.558</td>
+<td align="right">0.701</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.68</td>
+<td align="right">0.783</td>
+<td align="right">0.525</td>
+<td align="right">0.712</td>
+<td align="right">0.618</td>
+<td align="right">0.746</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.74</td>
+<td align="right">0.733</td>
+<td align="right">0.750</td>
+<td align="right">0.815</td>
+<td align="right">0.652</td>
+<td align="right">0.772</td>
+</tr>
+<tr class="even">
+<td align="left">Unigrams+Bigrams+Trigrams</td>
+<td align="left">CT</td>
+<td align="right">0.65</td>
+<td align="right">0.683</td>
+<td align="right">0.600</td>
+<td align="right">0.719</td>
+<td align="right">0.558</td>
+<td align="right">0.701</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.68</td>
+<td align="right">0.783</td>
+<td align="right">0.525</td>
+<td align="right">0.712</td>
+<td align="right">0.618</td>
+<td align="right">0.746</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.74</td>
+<td align="right">0.733</td>
+<td align="right">0.750</td>
+<td align="right">0.815</td>
+<td align="right">0.652</td>
+<td align="right">0.772</td>
+</tr>
+<tr class="odd">
+<td align="left">Unigrams+Trigrams</td>
+<td align="left">CT</td>
+<td align="right">0.65</td>
+<td align="right">0.683</td>
+<td align="right">0.600</td>
+<td align="right">0.719</td>
+<td align="right">0.558</td>
+<td align="right">0.701</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.68</td>
+<td align="right">0.783</td>
+<td align="right">0.525</td>
+<td align="right">0.712</td>
+<td align="right">0.618</td>
+<td align="right">0.746</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.74</td>
+<td align="right">0.733</td>
+<td align="right">0.750</td>
+<td align="right">0.815</td>
+<td align="right">0.652</td>
+<td align="right">0.772</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note.</em> Considered methods were Classification Trees (CT), Pruned Classification Trees based on the validation error (PCT), Logistic Regression (LR) and Support Vector Machines (SVM).</p>
+<p>Words that were regarded as influencial, according to the Classification Tree method containing only unigrams can be found in Figure 2. It appears that persons who mentioned the word ‘gop’, which is an abbreviation of “Grand Old Party”, referring to the Republican Party, are not expected to provide fake news. Texts that do not contain ‘gop’, but do mention ‘sen’, which is a slightly problematic stem, since it can refer to more than 200 distinct word, among others ‘senator’ and ‘sentence’, are also expected to be real. People who do not mention ‘gop’, do not mention ‘sen’, do not mention ‘thursday’, but do mention ‘octob’ at least once are expected to provide fake news. In depth interpretation of these words must however be done by a specialist, who is well aware of “hot topics” among fake news providers and American actualities.</p>
+<div class="figure"><span id="fig:unnamed-chunk-4"></span>
+<img src="/post/ThomVolkerPsychometrics_files/figure-html/unnamed-chunk-4-1.png" alt="Figure 2. Plot of the results of the Classification Tree on the unigrams without infrequently occurring words and without the word 'said'." width="2800" />
+<p class="caption">
+Figure 2: Figure 2. Plot of the results of the Classification Tree on the unigrams without infrequently occurring words and without the word ‘said’.
+</p>
+</div>
+<p>However, some cells in the data appeared to be empty, but did have a title. So in addition to the previous analysis, I also considered a model in which the title was added to the text. Since removing the word ‘said’ proved to be useful, I continued with discarding ‘said’ from the analyses. The best overall model was the Pruned Classification Tree that analyzed unigrams only, since it had both the highest accuracy and the highest F1-measure of all models considered. That is, overall, this model classified the most cases accordingly (Table 2).</p>
+<table>
+<caption><span id="tab:unnamed-chunk-5">Table 2: </span>Table 2: Results of the classification methods on the text including the title, without infrequently occurring words and without the frequently occurring word ‘said’</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Method</th>
+<th align="right">Accuracy</th>
+<th align="right">Sensitivity</th>
+<th align="right">Specificity</th>
+<th align="right">PPV</th>
+<th align="right">NPV</th>
+<th align="right">F1.measure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Unigrams</td>
+<td align="left">CT</td>
+<td align="right">0.78</td>
+<td align="right">0.717</td>
+<td align="right">0.875</td>
+<td align="right">0.896</td>
+<td align="right">0.673</td>
+<td align="right">0.796</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.81</td>
+<td align="right">0.883</td>
+<td align="right">0.700</td>
+<td align="right">0.815</td>
+<td align="right">0.800</td>
+<td align="right">0.848</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">LR</td>
+<td align="right">0.74</td>
+<td align="right">0.683</td>
+<td align="right">0.825</td>
+<td align="right">0.854</td>
+<td align="right">0.635</td>
+<td align="right">0.759</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.80</td>
+<td align="right">0.800</td>
+<td align="right">0.800</td>
+<td align="right">0.857</td>
+<td align="right">0.727</td>
+<td align="right">0.828</td>
+</tr>
+<tr class="odd">
+<td align="left">Unigrams+Bigrams</td>
+<td align="left">CT</td>
+<td align="right">0.73</td>
+<td align="right">0.767</td>
+<td align="right">0.675</td>
+<td align="right">0.780</td>
+<td align="right">0.659</td>
+<td align="right">0.773</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.73</td>
+<td align="right">0.767</td>
+<td align="right">0.675</td>
+<td align="right">0.780</td>
+<td align="right">0.659</td>
+<td align="right">0.773</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.73</td>
+<td align="right">0.717</td>
+<td align="right">0.750</td>
+<td align="right">0.811</td>
+<td align="right">0.638</td>
+<td align="right">0.761</td>
+</tr>
+<tr class="even">
+<td align="left">Unigrams+Bigrams+Trigrams</td>
+<td align="left">CT</td>
+<td align="right">0.73</td>
+<td align="right">0.767</td>
+<td align="right">0.675</td>
+<td align="right">0.780</td>
+<td align="right">0.659</td>
+<td align="right">0.773</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.73</td>
+<td align="right">0.767</td>
+<td align="right">0.675</td>
+<td align="right">0.780</td>
+<td align="right">0.659</td>
+<td align="right">0.773</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.72</td>
+<td align="right">0.700</td>
+<td align="right">0.750</td>
+<td align="right">0.808</td>
+<td align="right">0.625</td>
+<td align="right">0.750</td>
+</tr>
+<tr class="odd">
+<td align="left">Unigrams+Trigrams</td>
+<td align="left">CT</td>
+<td align="right">0.73</td>
+<td align="right">0.767</td>
+<td align="right">0.675</td>
+<td align="right">0.780</td>
+<td align="right">0.659</td>
+<td align="right">0.773</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.73</td>
+<td align="right">0.767</td>
+<td align="right">0.675</td>
+<td align="right">0.780</td>
+<td align="right">0.659</td>
+<td align="right">0.773</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.72</td>
+<td align="right">0.700</td>
+<td align="right">0.750</td>
+<td align="right">0.808</td>
+<td align="right">0.625</td>
+<td align="right">0.750</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note.</em> Considered methods were Classification Trees (CT), Pruned Classification Trees based on the validation error (PCT), Logistic Regression (LR) and Support Vector Machines (SVM).
+Second results.</p>
+<div class="figure"><span id="fig:unnamed-chunk-6"></span>
+<img src="/post/ThomVolkerPsychometrics_files/figure-html/unnamed-chunk-6-1.png" alt="Figure 3. Plot of the results of the Pruned Classification Tree on the unigrams without infrequently occurring words and without the word 'said'." width="2800" />
+<p class="caption">
+Figure 3: Figure 3. Plot of the results of the Pruned Classification Tree on the unigrams without infrequently occurring words and without the word ‘said’.
+</p>
+</div>
+<p>The pruned classification tree is in this scenario relatively simple. Once again, ‘gop’ is an important phrase, and the same holds for ‘thursday’ and ‘octob’. People who do mention ‘gop’ are expected to provide real news, as well as people who do not mention ‘gop’ at all, but do mention ‘thursday’. People who do not mention ‘gop’, do not mention ‘thursday’, but do mention ’octob are expected to provide fake news.</p>
+<p>In practice, I would not use the model to base important decisions on, since the accuracy was not extremely high, and overall there were a substantial number of misclassifications. However, the provided models might be useful to guide people with interest in tracking down fake news, because it can narrow their search for texts that might be interesting. Given the fact that these people will probably not be able to identify all fake news going around, a narrower scope might help them to search for suspicious news.</p>
+<p>To conclude, I would prefer the models based on Classification Trees, due to their simplicity. In my opinion, working with people who might not have profound knowledge about statistical topics, a simpler model might suit better. Of course, it is better to use a model that fits than a poor fitting model. However, in the current situation, it does not same to make a lot of difference which model one uses, and thus a Classification Tree, eventually with pruning after building the tree, might be best suited.</p>
+</div>
+<div id="appendix-a" class="section level1">
+<h1>Appendix A</h1>
+<table>
+<caption><span id="tab:unnamed-chunk-7">Table 3: </span>Results of initial analyses containing unigrams, bigrams and trigrams separately and combinations of the three.</caption>
+<thead>
+<tr class="header">
+<th align="left"></th>
+<th align="left">Method</th>
+<th align="right">Accuracy</th>
+<th align="right">Sensitivity</th>
+<th align="right">Specificity</th>
+<th align="right">PPV</th>
+<th align="right">NPV</th>
+<th align="right">F1.measure</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Unigrams</td>
+<td align="left">CT</td>
+<td align="right">0.72</td>
+<td align="right">0.800</td>
+<td align="right">0.600</td>
+<td align="right">0.750</td>
+<td align="right">0.667</td>
+<td align="right">0.774</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.76</td>
+<td align="right">0.850</td>
+<td align="right">0.625</td>
+<td align="right">0.773</td>
+<td align="right">0.735</td>
+<td align="right">0.810</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">LR</td>
+<td align="right">0.75</td>
+<td align="right">0.700</td>
+<td align="right">0.825</td>
+<td align="right">0.857</td>
+<td align="right">0.647</td>
+<td align="right">0.771</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.77</td>
+<td align="right">0.767</td>
+<td align="right">0.775</td>
+<td align="right">0.836</td>
+<td align="right">0.689</td>
+<td align="right">0.800</td>
+</tr>
+<tr class="odd">
+<td align="left">Bigrams</td>
+<td align="left">CT</td>
+<td align="right">0.66</td>
+<td align="right">0.817</td>
+<td align="right">0.425</td>
+<td align="right">0.681</td>
+<td align="right">0.607</td>
+<td align="right">0.742</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.65</td>
+<td align="right">0.850</td>
+<td align="right">0.350</td>
+<td align="right">0.662</td>
+<td align="right">0.609</td>
+<td align="right">0.745</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">LR</td>
+<td align="right">0.71</td>
+<td align="right">0.717</td>
+<td align="right">0.700</td>
+<td align="right">0.782</td>
+<td align="right">0.622</td>
+<td align="right">0.748</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.68</td>
+<td align="right">0.683</td>
+<td align="right">0.675</td>
+<td align="right">0.759</td>
+<td align="right">0.587</td>
+<td align="right">0.719</td>
+</tr>
+<tr class="odd">
+<td align="left">Trigrams</td>
+<td align="left">CT</td>
+<td align="right">0.62</td>
+<td align="right">0.867</td>
+<td align="right">0.250</td>
+<td align="right">0.634</td>
+<td align="right">0.556</td>
+<td align="right">0.732</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.61</td>
+<td align="right">0.867</td>
+<td align="right">0.225</td>
+<td align="right">0.627</td>
+<td align="right">0.529</td>
+<td align="right">0.727</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">LR</td>
+<td align="right">0.63</td>
+<td align="right">0.867</td>
+<td align="right">0.275</td>
+<td align="right">0.642</td>
+<td align="right">0.579</td>
+<td align="right">0.738</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.64</td>
+<td align="right">0.867</td>
+<td align="right">0.300</td>
+<td align="right">0.650</td>
+<td align="right">0.600</td>
+<td align="right">0.743</td>
+</tr>
+<tr class="odd">
+<td align="left">Unigrams+Bigrams</td>
+<td align="left">CT</td>
+<td align="right">0.68</td>
+<td align="right">0.683</td>
+<td align="right">0.675</td>
+<td align="right">0.759</td>
+<td align="right">0.587</td>
+<td align="right">0.719</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.75</td>
+<td align="right">0.833</td>
+<td align="right">0.625</td>
+<td align="right">0.769</td>
+<td align="right">0.714</td>
+<td align="right">0.800</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.74</td>
+<td align="right">0.733</td>
+<td align="right">0.750</td>
+<td align="right">0.815</td>
+<td align="right">0.652</td>
+<td align="right">0.772</td>
+</tr>
+<tr class="even">
+<td align="left">Unigrams+Bigrams+Trigrams</td>
+<td align="left">CT</td>
+<td align="right">0.68</td>
+<td align="right">0.683</td>
+<td align="right">0.675</td>
+<td align="right">0.759</td>
+<td align="right">0.587</td>
+<td align="right">0.719</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.75</td>
+<td align="right">0.833</td>
+<td align="right">0.625</td>
+<td align="right">0.769</td>
+<td align="right">0.714</td>
+<td align="right">0.800</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.74</td>
+<td align="right">0.733</td>
+<td align="right">0.750</td>
+<td align="right">0.815</td>
+<td align="right">0.652</td>
+<td align="right">0.772</td>
+</tr>
+<tr class="odd">
+<td align="left">Unigrams+Trigrams</td>
+<td align="left">CT</td>
+<td align="right">0.68</td>
+<td align="right">0.683</td>
+<td align="right">0.675</td>
+<td align="right">0.759</td>
+<td align="right">0.587</td>
+<td align="right">0.719</td>
+</tr>
+<tr class="even">
+<td align="left"></td>
+<td align="left">PCT</td>
+<td align="right">0.75</td>
+<td align="right">0.833</td>
+<td align="right">0.625</td>
+<td align="right">0.769</td>
+<td align="right">0.714</td>
+<td align="right">0.800</td>
+</tr>
+<tr class="odd">
+<td align="left"></td>
+<td align="left">SVM</td>
+<td align="right">0.74</td>
+<td align="right">0.733</td>
+<td align="right">0.750</td>
+<td align="right">0.815</td>
+<td align="right">0.652</td>
+<td align="right">0.772</td>
+</tr>
+</tbody>
+</table>
+<p><em>Note.</em> Considered methods were Classification Trees (CT), Pruned Classification Trees based on the validation error (PCT), Logistic Regression (LR) and Support Vector Machines (SVM).
+Second results.</p>
+</div>

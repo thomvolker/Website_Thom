@@ -1,0 +1,80 @@
+---
+title: "Psychometrics Assignment 2 - Societal Data Analytics"
+author: "Thom Volker"
+date: "`r format(Sys.time(), '%Y-%m-%d')`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r, include = F}
+source("~/Documents/MSBBSS/Semester 2/Psychometrics/ThomVolker.R")
+```
+
+# Introduction
+
+Fake news poses problems to present-day societies, and in some instances, it can even become dangerous, for example when people believe in the relationship between vaccines and autism. Multiple sites exist that fact-check online sources of information with regard to whether the provided information was real or fake. An algorithm that could be trained to distinguish real from fake news would make this process easier and faster. Therefore, it is attempted to construct a machine learning method that is able to distinguish fake from real news, by means of analyzing the textual data at hand. 
+
+# Methods 
+The dataset contained 500 texts that had on average nearly 800 words, and additionally a title and a label that indicates whether or not the text was fake. Used features were word unigrams, bigrams and trigrams, and combinations of the three. It was investigated whether frequencies of certain words or combinations of words (up to a maximum length of three) were indicative of the truthfulness of the text. The data was prepared for usage by means of removing excessive white spaces, punctuation, numbers, non-ASCII characters, replacing capitals by lower case letters, removing English stopwords, and applying Porter's stemming algorithm (to make sure that common words are identified as common words), in this specific order. Additionally, sparse terms were removed, with a maximum allowed sparsity of 0.90 in case of the unigrams, 0.95 in case of bigrams and 0.97 in case of the trigrams and combinations of unigrams, bigrams and trigrams. The training set consists of 80% of the original dataset, and is chosen at random; the remaining 20% serves as the validation data. All methods were ran with the same seed, which ensures that all methods use the same observations (texts) to build the model on. 
+
+Four different methods were considered to build a model. The first one was a classification tree, the second one was a classification tree that was pruned by means of the cross-validation error based on the complexity parameter, the third model under consideration was a logistic regression model, and the fourth model was a support vector machine model. All models can handle the dichotomous outcome variable, and it was attempted to predict whether the document was real or fake in the validation data. The performance of all methods under the specified input (unigrams, bigrams, trigrams or a combination of the three) was measured by means of accuracy, sensitivity, specificity, positive predictive value (PPV), negative predictive value (NPV) and the F1-measure. 
+
+```{r, echo = FALSE, dpi=400, fig.cap="Figure 1. Wordcloud containing the most frequently occurring words in the data, after the pre-processing steps."}
+set.seed(100)
+wordcloud(names(freq_uni), freq_uni, min.freq=350, scale=c(3, .1), 
+          colors=brewer.pal(6, "Paired"))
+```
+
+However, when the logistic model was used, the maximum allowed sparsity has to be further reduced when analyzing the unigrams, because otherwise, overfitting would be severe (to such an extent that a single variable for every model can be chosen). To avoid this problem, when unigrams were analyzed by means of the logistic regression model, the maximum allowed sparsity was reduced to 0.70. Combinations of unigrams, bigrams and trigrams were not considered, simply because bigrams and trigrams occured too infrequently in multiple texts, so that in the end, only unigrams would have been analyzed, if there is accounted for the overfitting problem. 
+
+# Results
+
+The dimensions of the training and test sets were equal, except for the fact that obviously, the training data contained 400 rows, while the test data only contained 100 rows. After initially performing the analysis, it appeared that all models performed reasonable, with an accuracy of around 0.75 when the unigrams were taken into account, eventually in combination with bigrams and/or trigrams (results are mentioned in Appendix A, since they were not of primary interest). When solely bigrams and trigrams were considered, the accuracy ranged between 0.60 and 0.70. However, one of the words that occurred very often as one of the first nodes was "said", which was not very informative, in my opinion. Therefore, I decided to exclude this word, and run the analysis again. Because removing the word 'said' would not make any difference with respect to bigrams and trigrams, and the models fitted on bigrams and trigrams initially did not perform that well, these two models were not considered any further. 
+
+As can be seen in Table 1, considering bigrams and trigrams next to unigrams did did not strengthen the accuracy of the considered methods. Overall, the results were very similar, and only considering unigrams yielded slightly better results as compared to additionally using bigrams and trigrams. Additionally, there was nearly no difference between the performance of the considered measures. However, it is noteworthy that the sensitivity of the Pruned Classification Tree is very high, while the specificity is much lower, while in case of the regular Classification Tree, the specificity is very high, but the sensitivity is much lower.
+
+```{r, echo = FALSE}
+knitr::kable(results_wo_said_w_names, caption = "Table 1: Results of the classification methods on the text only, without infrequently occurring words and without the word 'said'",
+             digits = 3)
+```
+
+*Note.* Considered methods were Classification Trees (CT), Pruned Classification Trees based on the validation error (PCT), Logistic Regression (LR) and Support Vector Machines (SVM). 
+
+Words that were regarded as influencial, according to the Classification Tree method containing only unigrams can be found in Figure 2. It appears that persons who mentioned the word 'gop', which is an abbreviation of "Grand Old Party", referring to the Republican Party, are not expected to provide fake news. Texts that do not contain 'gop', but do mention 'sen', which is a slightly problematic stem, since it can refer to more than 200 distinct word, among others 'senator' and 'sentence', are also expected to be real. People who do not mention 'gop', do not mention 'sen', do not mention 'thursday', but do mention 'octob' at least once are expected to provide fake news. In depth interpretation of these words must however be done by a specialist, who is well aware of "hot topics" among fake news providers and American actualities. 
+
+```{r, echo = FALSE, warning = F, message = F, dpi=400,fig.cap="Figure 2. Plot of the results of the Classification Tree on the unigrams without infrequently occurring words and without the word 'said'."}
+prp(uni_wo_said[[3]][[1]])
+```
+
+However, some cells in the data appeared to be empty, but did have a title. So in addition to the previous analysis, I also considered a model in which the title was added to the text. Since removing the word 'said' proved to be useful, I continued with discarding 'said' from the analyses. The best overall model was the Pruned Classification Tree that analyzed unigrams only, since it had both the highest accuracy and the highest F1-measure of all models considered. That is, overall, this model classified the most cases accordingly (Table 2). 
+
+```{r, echo = FALSE}
+knitr::kable(results_wo_said_w_names_10, caption = "Table 2: Results of the classification methods on the text including the title, without infrequently occurring words and without the frequently occurring word 'said'", digits = 3)
+```
+
+*Note.* Considered methods were Classification Trees (CT), Pruned Classification Trees based on the validation error (PCT), Logistic Regression (LR) and Support Vector Machines (SVM). 
+Second results.
+
+```{r, echo = FALSE, message = F, warning=F, dpi = 400, fig.cap = "Figure 3. Plot of the results of the Pruned Classification Tree on the unigrams without infrequently occurring words and without the word 'said'."}
+prp(uni_wo_said_10[[3]][[2]])
+```
+
+The pruned classification tree is in this scenario relatively simple. Once again, 'gop' is an important phrase, and the same holds for 'thursday' and 'octob'. People who do mention 'gop' are expected to provide real news, as well as people who do not mention 'gop' at all, but do mention 'thursday'. People who do not mention 'gop', do not mention 'thursday', but do mention 'octob are expected to provide fake news.
+
+In practice, I would not use the model to base important decisions on, since the accuracy was not extremely high, and overall there were a substantial number of misclassifications. However, the provided models might be useful to guide people with interest in tracking down fake news, because it can narrow their search for texts that might be interesting. Given the fact that these people will probably not be able to identify all fake news going around, a narrower scope might help them to search for suspicious news.
+
+To conclude, I would prefer the models based on Classification Trees, due to their simplicity. In my opinion, working with people who might not have profound knowledge about statistical topics, a simpler model might suit better. Of course, it is better to use a model that fits than a poor fitting model. However, in the current situation, it does not same to make a lot of difference which model one uses, and thus a Classification Tree, eventually with pruning after building the tree, might be best suited. 
+
+
+# Appendix A
+
+```{r, echo = FALSE}
+knitr::kable(results_w_names, digits = 3, caption = "Results of initial analyses containing unigrams, bigrams and trigrams separately and combinations of the three.")
+```
+
+*Note.* Considered methods were Classification Trees (CT), Pruned Classification Trees based on the validation error (PCT), Logistic Regression (LR) and Support Vector Machines (SVM). 
+Second results.
