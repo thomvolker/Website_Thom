@@ -7,7 +7,7 @@
     <description>Posts</description>
     <generator>Source Themes Academic (https://sourcethemes.com/academic/)</generator><language>en-us</language><copyright>© Thom Volker 2020</copyright>
     <image>
-      <url>/img/avatar.jpeg</url>
+      <url>/img/avatar.png</url>
       <title>Posts</title>
       <link>/post/</link>
     </image>
@@ -15,7 +15,7 @@
     <item>
       <title>Psychometrics Assignment 2 - Societal Data Analytics</title>
       <link>/post/thomvolkerpsychometrics/</link>
-      <pubDate>Tue, 30 Jun 2020 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 02 Jul 2020 00:00:00 +0000</pubDate>
       <guid>/post/thomvolkerpsychometrics/</guid>
       <description>
 
@@ -1097,6 +1097,79 @@ Figure 1: A fancy pie chart.
 &lt;div id=&#34;new-post&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;New post&lt;/h1&gt;
 &lt;p&gt;This is a new post without any information.&lt;/p&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>New post with references</title>
+      <link>/post/new_post_ref/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/post/new_post_ref/</guid>
+      <description>
+
+
+&lt;div id=&#34;r-markdown&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;R Markdown&lt;/h2&gt;
+&lt;p&gt;This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see &lt;a href=&#34;http://rmarkdown.rstudio.com&#34; class=&#34;uri&#34;&gt;http://rmarkdown.rstudio.com&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;When you click the &lt;strong&gt;Knit&lt;/strong&gt; button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;summary(cars)&lt;/code&gt;&lt;/pre&gt;
+&lt;pre&gt;&lt;code&gt;##      speed           dist       
+##  Min.   : 4.0   Min.   :  2.00  
+##  1st Qu.:12.0   1st Qu.: 26.00  
+##  Median :15.0   Median : 36.00  
+##  Mean   :15.4   Mean   : 42.98  
+##  3rd Qu.:19.0   3rd Qu.: 56.00  
+##  Max.   :25.0   Max.   :120.00&lt;/code&gt;&lt;/pre&gt;
+&lt;object data=&#34;cv.pdf&#34; type=&#34;application/pdf&#34; width=&#34;700px&#34; height=&#34;700px&#34;&gt;
+&lt;embed src=&#34;cv.pdf&#34;&gt;
+&lt;p&gt;
+This browser does not support PDFs. Please download the PDF to view it: &lt;a href=&#34;cv.pdf&#34;&gt;Download PDF&lt;/a&gt;.
+&lt;/p&gt;
+&lt;/embed&gt;
+&lt;/object&gt;
+&lt;/div&gt;
+&lt;div id=&#34;including-plots&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Including Plots&lt;/h2&gt;
+&lt;p&gt;You can also embed plots, for example:&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;/post/new_post_ref_files/figure-html/pressure-1.png&#34; width=&#34;672&#34; /&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;references&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;References&lt;/h1&gt;
+
+&lt;p&gt;&lt;/p&gt;
+&lt;div id=&#34;refs&#34;&gt;
+&lt;div id=&#34;ref-Akaike1973&#34;&gt;
+&lt;p&gt;Akaike, H. (1973). Information theory and an etension of the maximum likelihood principle. In B. N. Petrov &amp;amp; F. Csaki (Eds.), &lt;em&gt;Second international symposium on information theory&lt;/em&gt; (pp. 267–281). Budapest: Akademiai Kiado.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-BurnAnde2002&#34;&gt;
+&lt;p&gt;Burnham, K. P., &amp;amp; Anderson, D. R. (2002). &lt;em&gt;Model selection and multimodel inference: A practical information-theoretic approach&lt;/em&gt; (2nd ed.). New York: Springer-Verlag.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-DenUijl2011&#34;&gt;
+&lt;p&gt;Den Uijl, I. E. M., Fischer, K., Van der Bom, J. G., Grobbee, D. E., Rosendaal, F. R., &amp;amp; Plug, I. (2011). Analysis of low frequency bleeding data: The association of joint bleeds according to baseline fviii activity levels. &lt;em&gt;Haemophilia&lt;/em&gt;, &lt;em&gt;17&lt;/em&gt;, 41–44. &lt;a href=&#34;https://doi.org/10.1111/j.1365-2516.2010.02383.x&#34;&gt;https://doi.org/10.1111/j.1365-2516.2010.02383.x&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Raftery1995&#34;&gt;
+&lt;p&gt;Raftery, A. E. (1995). Bayesian Model Selection in Social Research. &lt;em&gt;Sociological Methodology&lt;/em&gt;, &lt;em&gt;25&lt;/em&gt;, 111. &lt;a href=&#34;https://doi.org/10.2307/271063&#34;&gt;https://doi.org/10.2307/271063&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-R&#34;&gt;
+&lt;p&gt;R Core Team. (2019). &lt;em&gt;R: A language and environment for statistical computing&lt;/em&gt;. R Foundation for Statistical Computing. &lt;a href=&#34;https://www.R-project.org/&#34;&gt;https://www.R-project.org/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Royston2006&#34;&gt;
+&lt;p&gt;Royston, P., Altman, D. G., &amp;amp; Sauerbrei, W. (2006). Dichotomizing continuous predictors in multiple regression: A bad idea. &lt;em&gt;Statistics in Medicine&lt;/em&gt;, &lt;em&gt;25&lt;/em&gt;, 127–141. &lt;a href=&#34;https://doi.org/10.1002/sim.2331&#34;&gt;https://doi.org/10.1002/sim.2331&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-Schwarz1978&#34;&gt;
+&lt;p&gt;Schwarz, G. (1978). Estimating the dimension of a model. &lt;em&gt;Annals of Statistics&lt;/em&gt;, &lt;em&gt;6&lt;/em&gt;, 461–462. &lt;a href=&#34;https://projecteuclid.org/download/pdf_1/euclid.aos/1176344136&#34;&gt;https://projecteuclid.org/download/pdf_1/euclid.aos/1176344136&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-MASS&#34;&gt;
+&lt;p&gt;Venables, W. N., &amp;amp; Ripley, B. D. (2002). &lt;em&gt;Modern applied statistics with s&lt;/em&gt; (Fourth). Springer. &lt;a href=&#34;http://www.stats.ox.ac.uk/pub/MASS4&#34;&gt;http://www.stats.ox.ac.uk/pub/MASS4&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-tidyverse&#34;&gt;
+&lt;p&gt;Wickham, H., Averick, M., Bryan, J., Chang, W., McGowan, L. D., François, R., Grolemund, G., Hayes, A., Henry, L., Hester, J., Kuhn, M., Pedersen, T. L., Miller, E., Bache, S. M., Müller, K., Ooms, J., Robinson, D., Seidel, D. P., Spinu, V., … Yutani, H. (2019). Welcome to the tidyverse. &lt;em&gt;Journal of Open Source Software&lt;/em&gt;, &lt;em&gt;43&lt;/em&gt;, 1686. &lt;a href=&#34;https://doi.org/10.21105/joss.01686&#34;&gt;https://doi.org/10.21105/joss.01686&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;ref-pscl&#34;&gt;
+&lt;p&gt;Zeileis, A., Kleiber, C., &amp;amp; Jackman, S. (2008). Regression models for count data in R. &lt;em&gt;Journal of Statistical Software&lt;/em&gt;, &lt;em&gt;27&lt;/em&gt;(8). &lt;a href=&#34;http://www.jstatsoft.org/v27/i08/&#34;&gt;http://www.jstatsoft.org/v27/i08/&lt;/a&gt;&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
 &lt;/div&gt;
 </description>
     </item>

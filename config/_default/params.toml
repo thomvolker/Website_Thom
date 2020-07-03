@@ -26,7 +26,7 @@ font = "merriweather"
 
 # Choose a font size.
 # Sizes: XS (extra small), S (small), M (medium), L (large - DEFAULT), XL (extra large)
-font_size = "S"
+font_size = "L"
 
 ############################
 ## Basic Info
@@ -128,7 +128,7 @@ contact_links = [
 ############################
 
 # Default image for social sharing and search engines. Place image in `static/img/` folder and specify image name here.
-sharing_image = "avatar.jpeg"
+sharing_image = "avatar.png"
 
 # Twitter username (without @). Used when a visitor shares your site on Twitter.
 twitter = ""

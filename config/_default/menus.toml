@@ -30,5 +30,15 @@
 
  [[main]]
     name = "CV"
-    url = "cv/"
+    url = "files/cv.html"
     weight = 70
+    
+[[main]]
+    name = "CV2"
+    url = "CV2/"
+    weight = 80
+
+[[main]]
+    name = "About"
+    url = "About/"
+    weight = 90

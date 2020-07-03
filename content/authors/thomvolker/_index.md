@@ -44,7 +44,6 @@ superuser: true
 title: Thom Volker
 user_groups:
 - Researchers
-- Visitors
 ---
 
-I am a second year's Statistics student at the UU, with an interest in 
+I am a second year's Statistics student at the UU, with an interest in data science.
