@@ -48,7 +48,7 @@ Aside
 ![](/Users/thomvolker/Documents/CV/img.jpeg)
 
 
-```{r}
+```{r, include = F, eval = F}
 if(params$pdf_mode){
   cat("View this CV online with links at _nickstrayer.me/datadrivencv/_")
 } else {
@@ -65,10 +65,10 @@ CV %>% print_contact_info()
 
 
 
-Language Skills {#skills}
+<!--Language Skills {#skills}
 --------------------------------------------------------------------------------
-
-```{r}
+-->
+```{r, include = F, eval = F}
 CV %>% print_skill_bars()
 ```
 
@@ -79,7 +79,7 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/nstrayer/datadrivencv).
+The source code is available [on github.com/thomvolker/cv](https://github.com/thomvolker/cv).
 
 Last updated on `r Sys.Date()`.
 
@@ -147,7 +147,7 @@ Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ::: aside
-```{r}
+```{r, eval = F, include = F}
 CV %<>% print_text_block('teaching_experience_aside')
 ```
 :::
@@ -209,11 +209,15 @@ CV %<>% print_links()
 
 -->
 
-Publications {data-icon=book}
---------------------------------------------------------------------------------
+<!-- Publications {data-icon=book} -->
+<!-- -------------------------------------------------------------------------------- -->
 
-<!-- --> {#title data-icon=none class=no-timeline}
---------------------------------------------------------------------------------
-```{r}
-print_publications("/Users/thomvolker/Documents/CV/my_publications.Rmd")
-```
+<!-- -->  <!-- {#title data-icon=none class=no-timeline} -->
+<!-- -------------------------------------------------------------------------------- -->
+<!-- ```{r} -->
+<!-- print_publications("/Users/thomvolker/Documents/CV/my_publications.Rmd") -->
+<!-- ``` -->
+
+<!-- KEEP THE FIRST ARROWS ON THE TITLE DATA LINE -->
+
+

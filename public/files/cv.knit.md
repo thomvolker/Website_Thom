@@ -1,7 +1,7 @@
 ---
 title: "Thom Benjamin Volker's CV"
 author: Thom Benjamin Volker
-date: "2020-07-16"
+date: "2020-07-22"
 params:
   pdf_mode:
     value: true
@@ -28,7 +28,7 @@ Aside
 ![](/Users/thomvolker/Documents/CV/img.jpeg)
 
 
-View this CV online with links at _nickstrayer.me/datadrivencv/_
+
 
 Contact {#contact}
 --------------------------------------------------------------------------------
@@ -40,51 +40,10 @@ Contact {#contact}
 
 
 
-Language Skills {#skills}
+<!--Language Skills {#skills}
 --------------------------------------------------------------------------------
+-->
 
-<div
-  class = 'skill-bar'
-  style = "background:linear-gradient(to right,
-                                      #969696 100%,
-                                      #d9d9d9 100% 100%)"
->R</div>
-<div
-  class = 'skill-bar'
-  style = "background:linear-gradient(to right,
-                                      #969696 900%,
-                                      #d9d9d9 900% 100%)"
->Javascript (d3.js)</div>
-<div
-  class = 'skill-bar'
-  style = "background:linear-gradient(to right,
-                                      #969696 80%,
-                                      #d9d9d9 80% 100%)"
->C++</div>
-<div
-  class = 'skill-bar'
-  style = "background:linear-gradient(to right,
-                                      #969696 80%,
-                                      #d9d9d9 80% 100%)"
->Python</div>
-<div
-  class = 'skill-bar'
-  style = "background:linear-gradient(to right,
-                                      #969696 700%,
-                                      #d9d9d9 700% 100%)"
->Bash</div>
-<div
-  class = 'skill-bar'
-  style = "background:linear-gradient(to right,
-                                      #969696 60%,
-                                      #d9d9d9 60% 100%)"
->SQL</div>
-<div
-  class = 'skill-bar'
-  style = "background:linear-gradient(to right,
-                                      #969696 60%,
-                                      #d9d9d9 60% 100%)"
->AWK</div>
 
 
 
@@ -93,9 +52,9 @@ Disclaimer {#disclaimer}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-The source code is available [on github.com/nstrayer/cv](https://github.com/nstrayer/datadrivencv).
+The source code is available [on github.com/thomvolker/cv](https://github.com/thomvolker/cv).
 
-Last updated on 2020-07-16.
+Last updated on 2020-07-22.
 
 
 
@@ -105,9 +64,7 @@ Main
 Thom Benjamin Volker {#title}
 --------------------------------------------------------------------------------
 
-I have made visualizations viewed by hundreds of thousands of people<sup>1</sup>, sped up query times for 25 terabytes of data by an average of 4,800 times<sup>2</sup>, and built packages for R<sup>3</sup> that let you do magic<sup>4</sup>.
-
-Currently searching for a position that allows me to build tools leveraging a combination of visualization, machine learning, and software engineering to help people explore and understand their data in new and useful ways.
+I am a second year’s Methodology and Statistics research master’s student with an interest in evidence aggregation, that is, combining statistical evidence. Other interests of mine include data science, programming, Bayesian methods and missing data problems.
 
 Education {data-icon=graduation-cap data-concise=true}
 --------------------------------------------------------------------------------
@@ -121,7 +78,7 @@ Utrecht University
 current - 2019
 
 - Thesis: Bayesian Evidence Synthesis using Bayes Factors - Combining studies with various designs
-- Grade: 8.9
+- Weighted average grade: 8.9
 
 
 
@@ -222,13 +179,13 @@ Industry Experience {data-icon=suitcase}
 --------------------------------------------------------------------------------
 
 ::: aside
-I have worked in a variety of roles ranging from journalist to software engineer to data scientist. I like collaborative environments where I can learn from my peers.
+NA
 :::
 
 
 ```
 ## Warning: The `i` argument of ``[.tbl_df`()` must lie in [0, rows] if positive, as of tibble 3.0.0.
-## Use `NA` as row index to obtain a row full of `NA` values.
+## Use `NA_integer_` as row index to obtain a row full of `NA` values.
 ## This warning is displayed once every 8 hours.
 ## Call `lifecycle::last_warnings()` to see where this warning was generated.
 ```
@@ -263,7 +220,7 @@ Teaching Experience {data-icon=chalkboard-teacher}
 --------------------------------------------------------------------------------
 
 ::: aside
-I am passionate about education. I believe that no topic is too complex if the teacher is empathetic and willing to think about new methods of approaching task.
+
 :::
 
 ### Co-supervision of Bachelor’s Thesis
@@ -332,7 +289,7 @@ Selected Data Science Writing {data-icon=chart-line}
 --------------------------------------------------------------------------------
 
 ::: aside
-I regularly blog about data science and visualization on my blog LiveFreeOrDichotomize.<sup>7</sup>
+NA
 :::
 
 
@@ -462,35 +419,30 @@ Links {data-icon=link}
 <br>
 
 
-1. https://www.nytimes.com/interactive/2016/08/26/us/college-student-migration.html
-2. https://livefreeordichotomize.com/2019/06/04/using_awk_and_r_to_parse_25tb/
-3. https://github.com/nstrayer/shinysense
-4. http://nickstrayer.me/dataDayTexas/
+1. NA
+2. NA
+3. NA
+4. NA
 5. NA
 6. NA
-7. https://livefreeordichotomize.com/
+7. NA
 8. NA
 9. NA
 10. NA
 11. NA
 12. NA
-13. NA
-14. NA
-15. NA
 
 -->
 
-Publications {data-icon=book}
---------------------------------------------------------------------------------
+<!-- Publications {data-icon=book} -->
+<!-- -------------------------------------------------------------------------------- -->
 
-<!-- --> {#title data-icon=none class=no-timeline}
---------------------------------------------------------------------------------
-Spiegelhalter, D. J., Best, N. G., Carlin, B. P., & Van Der Linde, A. (n.d.). Some weird title. Retrieved from www.thomvolker.com
+<!-- -->  <!-- {#title data-icon=none class=no-timeline} -->
+<!-- -------------------------------------------------------------------------------- -->
+<!-- ```{r} -->
+<!-- print_publications("/Users/thomvolker/Documents/CV/my_publications.Rmd") -->
+<!-- ``` -->
 
- Maxwell, J. C. (2008). Talent is never enough: Discover the choices that will take you beyond your talent (1st ed.). New York: Harper Collins.
+<!-- KEEP THE FIRST ARROWS ON THE TITLE DATA LINE -->
 
- Maxwell, J. C. (2007). Talent is never enough: Discover the choices that will take you beyond your talent (1st ed.). New York: Harper Collins.
 
- Spiegelhalter, D. J., Best, N. G., Carlin, B. P., & Van Der Linde, A. (2002). Bayesian measures of model complexity and fit. Journal of the Royal Statistical Society: Series B (Statistical Methodology), 64 (4), 583–639.
-
- Kass, R. E., & Raftery, A. E. (1995). Bayes factors. Journal of the American Statistical Association, 90 (430), 773–795.
