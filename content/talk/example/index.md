@@ -6,7 +6,7 @@ abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere 
 address:
   city: Stanford
   country: United States
-  postcode: "94305"
+  postcode: "94306"
   region: CA
   street: 450 Serra Mall
 all_day: false
