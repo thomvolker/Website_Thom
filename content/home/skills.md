@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 30  # Order that this section will appear.
 
-title = "Skills"
+title = ""
 subtitle = ""
 
 # Showcase personal skills or business features.
@@ -15,10 +15,10 @@ subtitle = ""
 # For available icons, see: https://sourcethemes.com/academic/docs/page-builder/#icons
 
 [[feature]]
-  icon = "r-project"
-  icon_pack = "fab"
-  name = "R"
-  description = "90%"
+  icon = "address-card"
+  icon_pack = "fas"
+  name = "Consultation"
+  description = "I have collaborated with several applied researchers. [Drop me a line](mailto:t.b.volker@uu.nl) if you are interested in statistical consultation as well."
   
 [[feature]]
   icon = "chart-line"

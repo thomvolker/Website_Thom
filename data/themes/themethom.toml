@@ -5,13 +5,13 @@ name = "themethom"
 light = true
 
 # Primary
-primary = "#17475f"
+primary = "#0e468e"
 
 # Menu
 menu_primary = "#fff"
-menu_text = "#17475f"
-menu_text_active = "#5391af"
-menu_title = "#17475f"
+menu_text = "#0e468e"
+menu_text_active = "#3086dc"
+menu_title = "#0e468e"
 
 # Home sections
 home_section_odd = "#fff"
