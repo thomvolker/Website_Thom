@@ -27,7 +27,7 @@ role: "Statistics • Data Science • Missing Data • Statistical Evidence Syn
 social:
 - icon: envelope
   icon_pack: fas
-  link: 't.b.volker@uu.nl'
+  link: 'mailto:t.b.volker@uu.nl'
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/ThomVolker
