@@ -28,6 +28,6 @@ email_form = 0
   
   # Background gradient.
   gradient_start = "#fff"
-  gradient_end = "#fafafa"
+  gradient_end = "#fff"
 +++
 
