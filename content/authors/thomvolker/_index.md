@@ -12,18 +12,18 @@ education:
     year: 2022
   - course: BA in Liberal Arts & Sciences
     institution: Utrecht University
-    year: 2008
+    year: 2019
 email: "t.b.volker@uu.nl"
 interests:
 - Evidence Synthesis
-- Bayesian Methods
-- Statistics
+- Bayesian Statistics
 - Data Science
 - Programming
+- Sociology
 organizations:
-- name: Utrecht University • CBS
+- name: Utrecht University • Statistics Netherlands
   url: ""
-role: "Statistics • Data Science • Missing Data • Statistical Evidence Synthesis \n\n Student Assistent"
+role: "Statistician • Data Scientist • Sociologist \n\n Research & Teaching Assistant"
 social:
 - icon: envelope
   icon_pack: fas
@@ -31,9 +31,9 @@ social:
 - icon: twitter
   icon_pack: fab
   link: https://twitter.com/ThomVolker
-- icon: google-scholar
-  icon_pack: ai
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+# - icon: google-scholar
+#   icon_pack: ai
+#   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
   link: https://github.com/thomvolker
