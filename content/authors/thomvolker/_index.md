@@ -1,7 +1,7 @@
 ---
 authors:
 - thomvolker
-bio: I am particularly interest in the accumulation of scientific evidence and missing data, that is, making correct inferences from multiple studies with missing data.
+bio: I enrolled in the Master's programmes *Methodology and Statistics of the Behavioural, Biomedical and Social Sciences* and *Sociology and Social Research*, writing my thesis about Bayesian evidence synthesis.
 education:
   courses:
   - course: MSc in Methods and Statistics for the Behavioural, Biomedical and Social Sciences
@@ -28,9 +28,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:t.b.volker@uu.nl'
-- icon: twitter
-  icon_pack: fab
-  link: https://twitter.com/ThomVolker
+# - icon: twitter
+#   icon_pack: fab
+#   link: https://twitter.com/ThomVolker
 # - icon: google-scholar
 #   icon_pack: ai
 #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -40,6 +40,9 @@ social:
 - icon: linkedin
   icon_pack: fab
   link: https://www.linkedin.com/in/thom-volker-a4620415a/
+- icon: cv
+  icon_pack: ai
+  link: /files/cv.html
 superuser: true
 title: Thom Volker
 user_groups:
