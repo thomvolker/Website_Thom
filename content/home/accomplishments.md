@@ -5,7 +5,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 50  # Order that this section will appear.
 
-title = "Accomplish&shy;ments"
+title = "Education"
 subtitle = ""
 
 # Date format
@@ -19,34 +19,43 @@ date_format = "Jan 2006"
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 
 [[item]]
-  organization = "Coursera"
-  organization_url = "https://www.coursera.org"
-  title = "Neural Networks and Deep Learning"
-  url = ""
-  certificate_url = "https://www.coursera.org"
-  date_start = "2018-10-01"
-  date_end = ""
-  description = ""
+  organization = "Utrecht University"
+  organization_url = "https://www.uu.nl/en"
+  title = "Methodology and Statistics of the Behavioural, Biomedical and Social Sciences"
+  url = "https://www.uu.nl/masters/en/methodology-and-statistics-behavioural-biomedical-and-social-sciences"
+  certificate_url = ""
+  date_start = "2019-09-01"
+  date_end = "2022-05-31"
+  description = """
+  Research Master's programme
+  
+  * Thesis: Bayesian Evidence Synthesis - Aggregating studies with varying designs
+  * Weighted average: 8.9
+  """
 
 [[item]]
-  organization = "edX"
-  organization_url = "https://www.edx.org"
-  title = "Blockchain Fundamentals"
-  url = "https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals"
-  certificate_url = "https://www.edx.org"
-  date_start = "2018-03-01"
-  date_end = ""
-  description = "Formulated informed blockchain models, hypotheses, and use cases."
+  organization = "Utrecht University"
+  organization_url = "https://www.uu.nl/en"
+  title = "Sociology and Social Research"
+  url = "https://www.uu.nl/masters/en/sociology-and-social-research"
+  certificate_url = ""
+  date_start = "2019-09-01"
+  date_end = "2022-05-31"
+  description = """
+  Research Master's programme
+  
+  * Thesis: Applying Bayesian Evidence Synthesis on multiple studies measuring trust
+  """
   
 [[item]]
-  organization = "DataCamp"
-  organization_url = "https://www.datacamp.com"
-  title = "Object-Oriented Programming in R: S3 and R6 Course"
-  url = ""
-  certificate_url = "https://www.datacamp.com"
-  date_start = "2017-07-01"
-  date_end = "2017-12-21"
-  description = ""
+  organization = "Utrecht University"
+  organization_url = "https://www.uu.nl/en"
+  title = "Liberal Arts & Sciences"
+  url = "https://www.uu.nl/bachelors/liberal-arts-and-sciences"
+  certificate_url = ""
+  date_start = "2016-09-01"
+  date_end = "2019-06-30"
+  description = "Bachelor's programme with a major in Pedagogical Sciences and a minor in Sociology & Social Research."
   
 [design.background]
   # Apply a background color, gradient, or image.
