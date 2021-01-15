@@ -1,7 +1,7 @@
 ---
 authors:
 - thomvolker
-bio: I enrolled in the Master's programmes *Methodology and Statistics of the Behavioural, Biomedical and Social Sciences* and *Sociology and Social Research*, writing my thesis about Bayesian evidence synthesis.
+bio: I am enrolled in the Master's programmes *Methodology and Statistics of the Behavioural, Biomedical and Social Sciences* and *Sociology and Social Research*, writing my thesis about Bayesian evidence synthesis.
 education:
   courses:
   - course: MSc in Methods and Statistics for the Behavioural, Biomedical and Social Sciences
