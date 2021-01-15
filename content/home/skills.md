@@ -30,7 +30,7 @@ subtitle = ""
   icon = "address-card"
   icon_pack = "fas"
   name = "Consultation"
-  description = "Since I started my Master's programme, I have collaborated with several applied researchers. [Drop me a line](mailto:t.b.volker@uu.nl) if you are interested in statistical consultation as well."
+  description = "Since I started my Master's programme, I have engaged in projects with several applied researchers. [Drop me a line](mailto:t.b.volker@uu.nl) if you are interested in statistical consultation as well."
   
 [design.background]
   # Apply a background color, gradient, or image.
