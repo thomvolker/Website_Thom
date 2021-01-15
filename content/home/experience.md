@@ -18,28 +18,26 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
-  title = "CEO"
-  company = "GenCoin"
+  title = "Teaching Assistant"
+  company = "Utrecht University"
   company_url = ""
-  location = "California"
-  date_start = "2017-01-01"
+  location = "Utrecht"
+  date_start = "2019-09-01"
   date_end = ""
   description = """
-  Responsibilities include:
   
-  * Analysing
-  * Modelling
-  * Deploying
+  As a teaching assistant, I have been involved in multiple Bachelor's, Master's and post-graduate courses on topics as missing data, structural equation modeling, social network analysis and various other standard statistical techniques.
+  
   """
 
 [[experience]]
-  title = "Professor"
-  company = "University X"
+  title = "Research Assistant"
+  company = "Utrecht University"
   company_url = ""
-  location = "California"
-  date_start = "2016-01-01"
-  date_end = "2016-12-31"
-  description = """Taught electronic engineering and researched semiconductor physics."""
+  location = "Utrecht"
+  date_start = "2019-09-01"
+  date_end = ""
+  description = """Over the years, I have assisted Dr. Rebecca Kuiper and Dr. Peter Lugtig by visualizing results of their research and developing course materials."""
   
 [design.background]
   # Apply a background color, gradient, or image.
