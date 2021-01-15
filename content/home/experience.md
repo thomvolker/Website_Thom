@@ -22,7 +22,7 @@ date_format = "Jan 2006"
   company = "Utrecht University"
   company_url = ""
   location = "Utrecht"
-  date_start = "2019-09-01"
+  date_start = "2018-09-01"
   date_end = ""
   description = """
   
@@ -38,6 +38,15 @@ date_format = "Jan 2006"
   date_start = "2019-09-01"
   date_end = ""
   description = """Over the years, I have assisted Dr. Rebecca Kuiper and Dr. Peter Lugtig by visualizing results of their research and developing course materials."""
+  
+[[experience]]
+  title = "Utrecht Summer School - Methodology and Statistics courses"
+  company = "Utrecht University"
+  company_url = ""
+  location = "Utrecht"
+  date_start = "2018-04-16"
+  date_end = "2019-08-30"
+  description = """I have contributed to the organization of 10+ Methodology and Statistics courses offered in Utrecht Summer School. Main tasks included planning, contacting students, assisting course coordinators with required tasks."""
   
 [design.background]
   # Apply a background color, gradient, or image.
