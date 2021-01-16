@@ -35,7 +35,7 @@
     
 [[main]]
     name = "CV2"
-    url = "CV2/"
+    url = "cv2/"
     weight = 80
     
 [[main]]
@@ -45,5 +45,5 @@
 
 [[main]]
     name = "About"
-    url = "About/"
+    url = "about/"
     weight = 90
