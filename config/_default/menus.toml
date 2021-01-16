@@ -37,6 +37,11 @@
     name = "CV2"
     url = "CV2/"
     weight = 80
+    
+[[main]]
+    name = "Contact"
+    url = "#contact"
+    weight = 85
 
 [[main]]
     name = "About"
