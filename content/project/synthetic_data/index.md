@@ -2,7 +2,7 @@
 date: "2016-04-27T00:00:00Z"
 external_link: ""
 image:
-  caption: Photo by rawpixel on Unsplash
+  caption: Photo by Adobe Stock
   focal_point: Smart
 links:
 - icon: twitter
@@ -10,10 +10,10 @@ links:
   name: Follow
   url: https://twitter.com/georgecushen
 slides: example
-summary: An example of using the in-built project page.
+summary: Synthetic data allows for openly sharing of research data, without disclosing identifying information of the participants, that could be as informative as the actually observed data.
 tags:
-- Deep Learning
-title: Internal Project
+- Multiple Imputation
+title: Multiple Imputation of Synthetic Data
 url_code: ""
 url_pdf: ""
 url_slides: ""

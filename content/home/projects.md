@@ -26,12 +26,12 @@ subtitle = ""
     tag = "*"
   
   [[content.filter_button]]
-    name = "Deep Learning"
-    tag = "Deep Learning"
+    name = "Bayesian Evidence Synthesis"
+    tag = "Bayesian Evidence Synthesis"
   
   [[content.filter_button]]
-    name = "Other"
-    tag = "Demo"
+    name = "Multiple Imputation"
+    tag = "Multiple Imputation"
 
 [design]
   # Choose how many columns the section has. Valid values: 1 or 2.
