@@ -33,10 +33,10 @@
     url = "files/cv.html"
     weight = 70
     
-[[main]]
-    name = "CV2"
-    url = "cv2/"
-    weight = 80
+#[[main]]
+#    name = "CV2"
+#    url = "cv2/"
+#    weight = 80
     
 [[main]]
     name = "Contact"
