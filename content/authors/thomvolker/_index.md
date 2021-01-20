@@ -17,12 +17,14 @@ email: "t.b.volker@uu.nl"
 interests:
 - Evidence Synthesis
 - Bayesian Statistics
+- Synthetic Data
+- Missing Data
 - Data Science
 - Programming
 - Sociology
 organizations:
-- name: Utrecht University • Statistics Netherlands
-  url: ""
+- name: Utrecht University
+  url: "https://www.uu.nl/en"
 role: "Statistician • Data Scientist • Sociologist \n\n Research & Teaching Assistant"
 social:
 - icon: envelope
@@ -49,9 +51,9 @@ user_groups:
 - Researchers
 ---
 
-I am a second year Master's student enrolled in the programmes *Methodology and Statistics of the Behavioural, Biomedical and Social Sciences* and *Sociology and Social Research* at Utrecht University. During these programmes, I have experienced the difficulties applied researchers encounter when answering their research questions. My goal is to enable these researchers with the best procedures and statistical methods, to facilitate making correct inferences from research data. 
+I am a second year Master's student enrolled in the programmes *Methodology and Statistics of the Behavioural, Biomedical and Social Sciences* and *Sociology and Social Research* at Utrecht University. During these programmes, I have experienced the difficulties applied researchers encounter when answering their research questions. My goal is to enable these researchers with the best procedures and statistical methods, to make optimal use of expensively collected research data and foster scientific progress. 
 
-Practically, this has led to my involvement in a project on the creation of synthetic data to foster the dissemination of research data without disclosing any sensitive information on participants, based on methods for multiple imputation of missing data, together with [Gerko Vink](https://www.gerkovink.com) and [Stef van Buuren](https://stefvanbuuren.name). Additionally, together with [Irene Klugkist](https://www.uu.nl/staff/iklugkist) I am involved in research on Bayesian Evidence Synthesis, which is a novel method developed for the aggregation of multiple studies with various designs that cannot be combined using meta-analysis. On the one hand, we investigate the performance of this method under a wide variety of circumstances, to make improvements where possible. On the other hand, I am involved in applying Bayesian Evidence Synthesis with regard to multiple studies that measure trust among actors in cooperative relations, together with [Vincent Buskens](https://www.uu.nl/staff/vbuskens) and [Werner Raub](https://www.uu.nl/staff/wraub#). Other interests of mine include Bayesian statistics in general, data science, programming and sociology. 
+Together with [Gerko Vink](https://www.gerkovink.com) and [Stef van Buuren](https://stefvanbuuren.name), I am involved in a project on synthetic data generation based on methods for the multiple imputation for missing data, where we aim to foster the dissemination of research data without disclosing sensitive participant data. Additionally, with [Irene Klugkist](https://www.uu.nl/staff/iklugkist) I work on Bayesian Evidence Synthesis, which is a novel method developed for the aggregation of results from studies with varying designs that cannot be combined using meta-analysis. On the one hand, we study the performance of this method under various circumstances to make improvements where possible. On the other hand, I am involved in applying Bayesian Evidence Synthesis to multiple studies that measure trust among actors in cooperative relations, together with [Vincent Buskens](https://www.uu.nl/staff/vbuskens) and [Werner Raub](https://www.uu.nl/staff/wraub#).
 
 
 
