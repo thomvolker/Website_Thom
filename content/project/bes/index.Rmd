@@ -17,3 +17,5 @@ In recent years, the importance of replications has received considerable attent
 However, established methods such as (Bayesian) meta-analysis and Bayesian updating are not applicable when studies differ conceptually. This is due to the fact that these methods require that the parameter estimates (i) share a common scale, and (ii) result from analyses with identical function forms [@lipsey_wilson_2001; @sutton_bayesian_meta2001; @schonbrodt_sequential_2017]. Consequently, @kuiper_combining_2013 proposed Bayesian Evidence Synthesis (BES), which is built upon the foundation of the Bayes Factor [BF; @kass_raftery_bayes_factors_1995]. This method allows researchers to pool evidence for a specific hypothesis over multiple studies, even if the studies have seemingly incompatible designs. 
 
 In the current project, Irene Klugkist and I aim to reveal under which circumstances BES performs inadequately. Additionally, we hope to propose adjustments to the method that improve its performance, so that an increasing number of researchers can benefit from BES.
+
+#### References
