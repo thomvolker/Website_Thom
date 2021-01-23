@@ -1,5 +1,1 @@
 
-[submodule "public"]
-	path = public
-	url = https://github.com/thomvolker/thomvolker.github.io.git
-	branch = master
