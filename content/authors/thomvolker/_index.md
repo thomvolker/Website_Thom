@@ -20,7 +20,7 @@ interests:
 - Synthetic Data
 - Missing Data
 - Data Science
-- Programming
+- Programming (in R)
 - Sociology
 organizations:
 - name: Utrecht University
