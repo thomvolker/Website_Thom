@@ -30,7 +30,7 @@ date_format = "Jan 2006"
   Research Master's programme
   
   * Thesis: Bayesian Evidence Synthesis - Aggregating studies with varying designs
-  * Weighted average: 8.9
+  * Weighted average: 9.0
   """
 
 [[item]]
