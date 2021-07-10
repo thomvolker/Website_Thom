@@ -26,7 +26,7 @@ date_format = "Jan 2006"
   date_end = ""
   description = """
   
-  As a teaching assistant, I have been involved in multiple Bachelor's, Master's and post-graduate courses on topics as missing data, structural equation modeling, social network analysis and various other standard statistical techniques.
+  As a teaching assistant, I have been involved in multiple Bachelor's, Master's and post-graduate courses on topics as programming in `R` missing data, structural equation modeling, social network analysis and various other standard statistical techniques.
   
   """
 
@@ -37,7 +37,7 @@ date_format = "Jan 2006"
   location = "Utrecht"
   date_start = "2019-09-01"
   date_end = ""
-  description = """Over the years, I have assisted Dr. Rebecca Kuiper and Dr. Peter Lugtig by visualizing results of their research and developing course materials."""
+  description = """Over the years, I have assisted Dr. Rebecca Kuiper and Dr. Peter Lugtig by visualizing results of their research, and developing course materials."""
   
 [[experience]]
   title = "Utrecht Summer School - Methodology and Statistics courses"
@@ -46,7 +46,7 @@ date_format = "Jan 2006"
   location = "Utrecht"
   date_start = "2018-04-16"
   date_end = "2019-08-30"
-  description = """I have contributed to the organization of 10+ Methodology and Statistics courses offered in Utrecht Summer School. Main tasks included planning, contacting students, assisting course coordinators with required tasks."""
+  description = """I have contributed to the organization of 10+ Methodology and Statistics courses offered in Utrecht Summer School. Main tasks included planning, contacting students and assisting course coordinators with required tasks."""
   
 [design.background]
   # Apply a background color, gradient, or image.
