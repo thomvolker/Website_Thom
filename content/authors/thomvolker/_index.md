@@ -30,9 +30,9 @@ social:
 - icon: envelope
   icon_pack: fas
   link: 'mailto:t.b.volker@uu.nl'
-# - icon: twitter
-#   icon_pack: fab
-#   link: https://twitter.com/ThomVolker
+- icon: twitter
+  icon_pack: fab
+  link: https://twitter.com/ThomVolker
 # - icon: google-scholar
 #   icon_pack: ai
 #   link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
@@ -44,7 +44,7 @@ social:
   link: https://www.linkedin.com/in/thom-volker-a4620415a/
 - icon: cv
   icon_pack: ai
-  link: /files/cv.html
+  link: /files/cv/cv.pdf
 superuser: true
 title: Thom Volker
 user_groups:
