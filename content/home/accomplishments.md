@@ -45,7 +45,7 @@ date_format = "Jan 2006"
   Research Master's programme
   
   * Thesis: Applying Bayesian Evidence Synthesis on multiple studies measuring trust
-  * Weighted average: 8.4
+  * Weighted average: 8.5
   """
   
 [[item]]
