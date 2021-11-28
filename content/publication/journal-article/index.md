@@ -1,52 +1,47 @@
 ---
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
-  ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed
-  ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis
-  sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida
-  egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id
-  dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.
-  Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: Synthetic datasets simultaneously allow for the dissemination of research 
+  data while protecting the privacy and confidentiality of respondents. Generating 
+  and analyzing synthetic datasets is straightforward, yet, a synthetic data analysis 
+  pipeline is seldom adopted by applied researchers. We outline a simple procedure 
+  for generating and analyzing synthetic datasets with the multiple imputation 
+  software mice (Version 3.13.15) in R. We demonstrate through simulations that the 
+  analysis results obtained on synthetic data yield unbiased and valid inferences 
+  and lead to synthetic records that cannot be distinguished from the true data records. 
+  The ease of use when synthesizing data with mice along with the validity of inferences 
+  obtained through this procedure opens up a wealth of possibilities for data 
+  dissemination and further research on initially private data.
 author_notes:
 - Equal contribution
 - Equal contribution
 authors:
-- admin
-- Robert Ford
-date: "2015-09-01T00:00:00Z"
-doi: ""
-featured: false
+- thomvolker
+- Gerko Vink
+date: "2021-11-23T00:00:00Z"
+doi: "10.3390/psych3040045"
+featured: true
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: 'Image credit: Jayden Walters'
   focal_point: ""
   preview_only: false
-projects: []
-publication: '*Journal of Source Themes, 1*(1)'
+projects: [synthetic_data]
+publication: '*Psych, 4*(3)'
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2017-01-01T00:00:00Z"
-slides: example
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
-  ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+publishDate: "2021-11-23T00:00:00Z"
+summary: We show how the `R`-package `mice` can be used to create and analyze
+  multiply imputed synthetic data sets.
 tags:
-- Source Themes
-title: An example journal article
-url_code: ""
-url_dataset: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
-url_poster: ""
-url_project: ""
-url_slides: ""
-url_source: ""
-url_video: ""
+- mice
+- multiple imputation
+- synthetic data 
+- statistical disclosure control
+- privacy
+title: 'Anonymiced Shareable Data: Using mice to Create and Analyze Multiply Imputed Synthetic Datasets'
+url_code: "https://github.com/thomvolker/Synthemice"
+url_pdf: 'files/synthemice_pdf/synthemice_volker_vink_2021.pdf'
+url_project: "project/synthetic_data"
+url_source: "https://www.mdpi.com/2624-8611/3/4/45"
 ---
 
-{{% alert note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /alert %}}
-
-{{% alert note %}}
-Click the *Slides* button above to demo Academic's Markdown slides feature.
-{{% /alert %}}
-
-Supplementary notes can be added here, including [code and math](https://sourcethemes.com/academic/docs/writing-markdown-latex/).
+All accompanying files and `R`-code can be found on the project's [GitHub page](https://github.com/amices/Synthemice).
