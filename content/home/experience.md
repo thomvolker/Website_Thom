@@ -28,37 +28,19 @@ date_format = "Jan 2006"
   My PhD-project focuses on the creation of privacy-preserving synthetic data, and aims to further the methodology for generating artificial data sets that serve as non-disclosive alternatives of collected research data. 
   
   """
-
+  
 [[experience]]
-  title = "Teaching Assistant"
+  title = "Student-Assistant"
   company = "Utrecht University"
-  company_url = ""
+  company_url = "https://www.uu.nl/en"
   location = "Utrecht"
-  date_start = "2018-09-01"
+  date_start = "2018-04-16"
   date_end = "2022-06-30"
   description = """
   
-  As a teaching assistant, I have been involved in multiple Bachelor's, Master's and post-graduate courses on *Programming in `R`*, *Missing data*, *Structural equation modeling*, *Social Network Analysis* and various other standard statistical techniques.
+  As a student-assistant, I have contributed to teaching and course development,  research and the organization of the Methodology and Statistics Utrecht Summer School courses. I developed materials for and taught in multiple Bachelor's, Master's and post-graduate level courses on a wide range of topics, such as data science techniques, missing data, structural equation model, social network analysis and standard statistical techniques, and co-supervised Bachelor's and Master's theses. Additionally, I assisted in research related to multiple imputation, model selection, hypothesis evaluation and automated text analysis.
   
-  """
-
-[[experience]]
-  title = "Research Assistant"
-  company = "Utrecht University"
-  company_url = ""
-  location = "Utrecht"
-  date_start = "2019-09-01"
-  date_end = "2022-06-30"
-  description = """Over the years, I have assisted Dr. Rebecca Kuiper and Dr. Peter Lugtig by visualizing results of their research, developing course materials and revising academic papers."""
-  
-[[experience]]
-  title = "Utrecht Summer School - Methodology and Statistics courses"
-  company = "Utrecht University"
-  company_url = ""
-  location = "Utrecht"
-  date_start = "2018-04-16"
-  date_end = "2019-08-30"
-  description = """I have contributed to the organization of 10+ Methodology and Statistics courses offered in Utrecht Summer School. Main tasks included planning, contacting students and assisting course coordinators with required tasks."""
+"""
   
 [design.background]
   # Apply a background color, gradient, or image.

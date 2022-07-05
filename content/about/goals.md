@@ -2,6 +2,7 @@
 title = "Goals"
 date = 2021-01-22
 type = "post"
+active = false
 [design.background]
   # Background gradient.
   gradient_start = "#fff"

@@ -24,13 +24,13 @@ subtitle = ""
   icon = "laptop"
   icon_pack = "fas"
   name = "Research"
-  description = "My research is concentrated around Bayesian methods concerning the aggregation of results from multiple studies and multiple imputation (for missing data and synthetic data)."
+  description = "My research concentrates on developing and advancing methodology to create and evaluate privacy-preserving synthetic data, that aims to overcome disclosure risks related to disseminating research data."
   
 [[feature]]
   icon = "address-card"
   icon_pack = "fas"
   name = "Consultation"
-  description = "Since I started my Master's programme, I have engaged in projects with several applied researchers. [Drop me a line](mailto:t.b.volker@uu.nl) if you are interested in statistical consultation as well."
+  description = "Over the past years, I consulted in multiple projects with applied researchers (ranging from sociologists and educational scientists to medical scientists). [Drop me a line](mailto:t.b.volker@uu.nl) if you are interested."
   
 [design.background]
   # Apply a background color, gradient, or image.

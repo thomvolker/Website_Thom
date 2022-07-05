@@ -25,7 +25,7 @@ interests:
 organizations:
 - name: Utrecht University
   url: "https://www.uu.nl/en"
-role: "Statistician • Data Scientist • Sociologist \n\n PhD Candidate"
+role: "Statistician • Data Scientist • Sociologist \n\n PhD Candidate in Methods and Statistics"
 social:
 - icon: envelope
   icon_pack: fas
@@ -51,11 +51,11 @@ user_groups:
 - Researchers
 ---
 
-I am a second year Master's student enrolled in the programmes *Methodology and Statistics of the Behavioural, Biomedical and Social Sciences* and *Sociology and Social Research* at Utrecht University. During these programmes, I have experienced the difficulties applied researchers encounter when answering their research questions. My goal is to enable these researchers with the best procedures and statistical methods, to make optimal use of expensively collected research data and foster scientific progress. 
+I am a PhD candidate at the Methods and Statistics department of Utrecht University, researching different techniques for creating privacy-preserving synthetic data sets, under the supervision of [Dr. Erik-Jan van Kesteren](https://erikjanvankesteren.nl/), Dr. Peter-Paul de Wolf and [Prof. Dr. Stef van Buuren](https://stefvanbuuren.name/). I aim to work at the intersection of social-scientific research and cutting-edge statistical techniques, to get the most out of expensively collected research data. 
 
-Together with [Gerko Vink](https://www.gerkovink.com) and [Stef van Buuren](https://stefvanbuuren.name), I am involved in a project on synthetic data generation based on methods for the multiple imputation for missing data, where we aim to foster the dissemination of research data without disclosing sensitive participant data. Additionally, with [Irene Klugkist](https://www.uu.nl/staff/iklugkist) I work on Bayesian Evidence Synthesis, which is a novel method developed for the aggregation of results from studies with varying designs that cannot be combined using meta-analysis. On the one hand, we study the performance of this method under various circumstances to make improvements where possible. On the other hand, I am involved in applying Bayesian Evidence Synthesis to multiple studies that measure trust among actors in cooperative relations, together with [Vincent Buskens](https://www.uu.nl/staff/vbuskens) and [Werner Raub](https://www.uu.nl/staff/wraub#).
+In the past, I worked on several projects on [evidence synthesis](project/bes), aiming to aggregate evidence over heterogeneous studies that do not allow for meta-analysis. Together with [Irene Klugkist](https://www.uu.nl/staff/iklugkist) I outlined and evaluated the methodology, while I applied it on a set of heterogeneous, sociological studies with [Vincent Buskens](https://www.uu.nl/staff/vbuskens) and [Werner Raub](https://www.uu.nl/staff/wraub#). Additionally, I worked on several projects in a broad range of topics (multiple imputation of missing data, unsupervised text analysis and hypothesis evaluation using information criteria).
 
-
+Besides research, I teach graduate and post-graduate level courses in data science techniques and multiple imputation of missing data.
 
 
 

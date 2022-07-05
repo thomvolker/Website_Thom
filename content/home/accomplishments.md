@@ -29,7 +29,7 @@ date_format = "Jan 2006"
   description = """
   Research Master's programme
   
-  * Thesis: Bayesian Evidence Synthesis - Aggregating studies with varying designs
+  * Thesis: Combining support for hypotheses over heterogeneous studies with Bayesian Evidence Synthesis: A simulation study
   * Cum laude (GPA 8.9/10)
   """
 
@@ -44,7 +44,7 @@ date_format = "Jan 2006"
   description = """
   Research Master's programme
   
-  * Thesis: Applying Bayesian Evidence Synthesis on multiple studies measuring trust
+  * Thesis: The future is made today: Concerns for reputation foster trust and cooperation
   * Cum laude (GPA 8.7/10)
   """
   
