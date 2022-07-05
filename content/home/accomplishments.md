@@ -25,12 +25,12 @@ date_format = "Jan 2006"
   url = "https://www.uu.nl/masters/en/methodology-and-statistics-behavioural-biomedical-and-social-sciences"
   certificate_url = ""
   date_start = "2019-09-01"
-  date_end = "2022-05-31"
+  date_end = "2022-06-30"
   description = """
   Research Master's programme
   
   * Thesis: Bayesian Evidence Synthesis - Aggregating studies with varying designs
-  * Weighted average: 9.0
+  * Cum laude (GPA 8.9/10)
   """
 
 [[item]]
@@ -40,12 +40,12 @@ date_format = "Jan 2006"
   url = "https://www.uu.nl/masters/en/sociology-and-social-research"
   certificate_url = ""
   date_start = "2019-09-01"
-  date_end = "2022-05-31"
+  date_end = "2022-06-30"
   description = """
   Research Master's programme
   
   * Thesis: Applying Bayesian Evidence Synthesis on multiple studies measuring trust
-  * Weighted average: 8.5
+  * Cum laude (GPA 8.7/10)
   """
   
 [[item]]

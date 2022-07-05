@@ -15,9 +15,9 @@ education:
     year: 2019
 email: "t.b.volker@uu.nl"
 interests:
+- Synthetic Data
 - Evidence Synthesis
 - Bayesian Statistics
-- Synthetic Data
 - Missing Data
 - Data Science
 - Programming (in R)
@@ -25,7 +25,7 @@ interests:
 organizations:
 - name: Utrecht University
   url: "https://www.uu.nl/en"
-role: "Statistician • Data Scientist • Sociologist \n\n Research & Teaching Assistant"
+role: "Statistician • Data Scientist • Sociologist \n\n PhD Candidate"
 social:
 - icon: envelope
   icon_pack: fas

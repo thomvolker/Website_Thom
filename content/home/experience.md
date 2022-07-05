@@ -18,12 +18,24 @@ date_format = "Jan 2006"
 #   Leave `date_end` empty if it's your current employer.
 #   Begin/end multi-line descriptions with 3 quotes `"""`.
 [[experience]]
+  title = "PhD Candidate"
+  company = "Utrecht University"
+  company_url = "https://www.uu.nl/en"
+  date_start = "2022-07-01"
+  date_end = ""
+  description = """
+  
+  My PhD-project focuses on the creation of privacy-preserving synthetic data, and aims to further the methodology for generating artificial data sets that serve as non-disclosive alternatives of collected research data. 
+  
+  """
+
+[[experience]]
   title = "Teaching Assistant"
   company = "Utrecht University"
   company_url = ""
   location = "Utrecht"
   date_start = "2018-09-01"
-  date_end = ""
+  date_end = "2022-06-30"
   description = """
   
   As a teaching assistant, I have been involved in multiple Bachelor's, Master's and post-graduate courses on *Programming in `R`*, *Missing data*, *Structural equation modeling*, *Social Network Analysis* and various other standard statistical techniques.
@@ -36,7 +48,7 @@ date_format = "Jan 2006"
   company_url = ""
   location = "Utrecht"
   date_start = "2019-09-01"
-  date_end = ""
+  date_end = "2022-06-30"
   description = """Over the years, I have assisted Dr. Rebecca Kuiper and Dr. Peter Lugtig by visualizing results of their research, developing course materials and revising academic papers."""
   
 [[experience]]
