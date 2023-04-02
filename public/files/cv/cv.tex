@@ -1,0 +1,323 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+\documentclass[11pt,a4paper,roman,colorlinks,linkcolor = blue]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}
+\usepackage{fontawesome5}
+\usepackage{fontspec}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+\usepackage{url}
+
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+\usepackage{apacite}
+\newcommand*{\doi}[1]{\href{http://dx.doi.org/#1}{#1}}
+% personal data
+\name{Thom Benjamin}{Volker}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+
+\address{Utrecht, The Netherlands}{}{}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+
+% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
+% \extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\setlength{\tabcolsep}{12pt}
+
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\definecolor{darkblue}{HTML}{153884}
+\hypersetup{urlcolor=darkblue}
+%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-18mm}
+
+\begin{center}
+\begin{tabular}{ c c c c c }
+ \faGlobe\enspace \href{https://thomvolker.github.io}{thomvolker.github.io} & \faEnvelope\enspace \href{mailto:t.b.volker@uu.nl}{t.b.volker@uu.nl} & \faGithub\enspace \href{https://www.github.com/thomvolker}{GitHub} & \faTwitter\enspace \href{https://www.twitter.com/thomvolker}{Twitter} & \faLinkedin\enspace \href{https://www.linkedin.com/in/thom-volker-a4620415a/}{LinkedIn}% & \faMobile\enspace 123-456-7891\\
+\end{tabular}
+\end{center}
+
+%----------------------------------------------------------------------------------
+%            EDUCATION
+%----------------------------------------------------------------------------------
+
+\section{EDUCATION}
+{
+\customcventry{Cum laude (GPA 8.9/10)}{Utrecht University, Netherlands}{MSc Methodology and Statistics}{2019 - 2022}{}{}
+{\begin{itemize}
+  \item[$\circ$] Thesis - Combining support for hypotheses over heterogeneous studies with Bayesian Evidence Synthesis: A simulation study (supervised by \href{https://www.uu.nl/medewerkers/iklugkist}{Prof. Dr. Irene Klugkist}).
+\end{itemize}
+}
+\customcventry{Cum laude (GPA 8.7/10)}{Utrecht University, Netherlands}{MSc Sociology and Social Research}{2019 - 2022}{}{}
+{\begin{itemize}
+  \item[$\circ$] Thesis - The future is made today: Concerns for reputation foster trust and cooperation (supervised by \href{https://www.uu.nl/medewerkers/vbuskens}{Prof. Dr. Ir. Vincent Buskens} \& \href{https://www.uu.nl/medewerkers/WRaub}{Prof. Dr. Werner Raub}).
+\end{itemize}
+}
+\customcventry{}{Utrecht University, Netherlands}{BA Liberal Arts \& Sciences}{2016 - 2019}{}{}{}
+{\begin{itemize}
+  \item[$\circ$] Major in Pedagogical Sciences; minor in Sociology and Social Research
+\end{itemize}
+}
+}
+
+%----------------------------------------------------------------------------------
+%            WORKING EXPERIENCE
+%----------------------------------------------------------------------------------
+
+\section{EXPERIENCE}
+
+{\customcventry{}{Utrecht University}{PhD candidate Synthetic data}{2022 - Current}{}
+{\begin{itemize}
+  \item[$\circ$] Supervisor: Dr. Erik-Jan van Kesteren
+  \item[$\circ$] I investigate how to optimize the creation of synthetic data in terms of the risk-utility trade-off. 
+ \end{itemize}
+}
+}
+
+{\customcventry{}{Utrecht University}{Internship MICE Group}{2020 - 2022}{}
+{\begin{itemize}
+  \item[$\circ$] With \href{https://www.gerkovink.com}{Dr. Gerko Vink} I established a framework on how to generate synthetic data with the \texttt{R}-package \texttt{mice} to preserve privacy and confidentiality.
+\end{itemize}
+}
+}
+
+{\customcventry{}{Utrecht University}{Research Assistant}{2019 - 2022}{}
+{\begin{itemize}
+  \item[$\circ$] For \href{https://www.peterlugtig.com}{Dr. Peter Lugtig}, I worked on research and teaching related topics, (e.g., creating content for the research master level course `Survey Data Analysis', by developing a \href{https://utrecht-university.shinyapps.io/SDA_shinyelectionbias/}{Shiny App}, creating data visualizations and creating the webpage \href{https://www.peterlugtig.com}{https://www.peterlugtig.com}.
+  \item[$\circ$] For \href{https://www.uu.nl/medewerkers/rmkuiper}{Dr. Rebecca Kuiper}, I created data visualizations and assisted PhD students by revising text. 
+\end{itemize}
+}
+
+{\customcventry{}{Utrecht University}{Teaching assistant}{2018 - 2022}{}
+{\begin{itemize}
+  \item[$\circ$] Thesis co-supervision: 
+  {\begin{itemize}
+    \item[--] Multiply imputed synthetic datasets - assessing validity of multiply imputed synthetic datasets with the \texttt{R}-package \href{https://github.com/amices/mice}{\texttt{mice}} (Master's thesis, with \href{httpsL//www.gerkovink.com}{Dr. Gerko Vink)}.
+    \item[--] Comparing multiple methods of research synthesis (Bachelor's thesis, with \href{https://www.uu.nl/medewerkers/iklugkist}{Prof. Dr. Irene Klugkist}).
+    \end{itemize}
+  }
+  \item[$\circ$] Post-graduate level courses:
+  {\begin{itemize}
+    \item[--] Multiple Imputation in Practice (MIMP; Utrecht Summer School 2019-2021) - supervision of practicals and providing \texttt{R} assistance.
+    \item[--] Statistical Programming with R (Utrecht Summer School 2021) - supervision of practicals.
+    \item[--] Advanced Survey Design - supervision of practicals.
+   \end{itemize}
+  }
+  \item[$\circ$] Master's level courses:
+  {\begin{itemize}
+    \item[--] Network Analysis (2020-2021) - developing practical assignments and supervising the practicals.
+    \item[--] Methodological and Statistical Aspects of Social Science Research - teaching working groups of about 20 persons on topics ranging from multiple regression to moderation and mediation analysis.
+   \end{itemize}
+  }
+  \end{itemize}
+  }
+  {\begin{itemize}
+  
+  \item[$\circ$] Bachelor's level courses:
+  {\begin{itemize}
+    \item[--] Theory Construction and Statistical Modeling - teaching practicals on structural equation modeling using \texttt{lavaan}.
+    \item[--] Various undergraduate courses on standard statistical methods.
+   \end{itemize}
+  }
+\end{itemize}
+}
+}
+
+{\customcventry{}{Utrecht University}{ASReview}{2021}{}
+{\begin{itemize}
+  \item[$\circ$] Researcher at \href{https://asreview.nl/}{ASReview} - an open-source project that helps researchers to screen (tens of) thousands of papers automatically for inclusion in systematic reviews, meta-analyses, medical guidelines, or overviews.
+\end{itemize}
+}
+}
+
+
+%----------------------------------------------------------------------------------
+%            VOLUNTARY WORK AND OTHER THINGS
+%----------------------------------------------------------------------------------
+
+\section{Other}
+
+{\customcventry{}{Utrecht University}{Debuut}{2019 - 2020}{}
+{\begin{itemize}
+  \item[$\circ$] Buddy programme at Utrecht University to match potential first generation university student with actual students to get a flavour of what studying at a university entails.
+  \end{itemize}
+  }
+}
+{\customcventry{}{PhD Representative}{IOPS}{2022 - Current}{}
+{\begin{itemize}
+  \item[$\circ$] Represent PhD candidates in the Interuniversity Graduate School of Psychometrics and Sociometrics.
+  \end{itemize}
+  }
+}
+
+\section{Received funding}
+
+{\customcventry{}{Project lead}{SynthEval}{2023-2024}{}
+{\begin{itemize}
+  \item[$\circ$] An R package for evaluating and improving the quality of synthetic data sets. For €15.000.
+\end{itemize}
+  }
+}
+
+%----------------------------------------------------------------------------------
+%            SOFTWARE PROFICIENCY
+%----------------------------------------------------------------------------------
+
+\section{Statistical software proficiency}
+{\begin{minipage}{\maincolumnwidth}%
+	\small{
+  \begin{itemize}
+    \item[$\circ$] \texttt{R}
+    \item[$\circ$] \texttt{MPlus}
+    \item[$\circ$] \texttt{SPSS}
+    \item[$\circ$] \texttt{HLM}
+    \item[$\circ$] \texttt{JAGS}
+    \item[$\circ$] Learning \texttt{python}
+    \item[$\circ$] Learning \texttt{C++}
+  \end{itemize}}
+\end{minipage}}
+}
+
+\section{Invited presentations / workshops}
+
+\begin{itemize}
+
+\item[$\circ$] Fake it ‘till you make it: Generating synthetic data with high utility in \texttt{R} [with Erik-Jan van Kesteren], T{\"u}bingen Open Science Winter School, 13 February 2023, T{\"u}bingen, Germany.
+
+\item[$\circ$] Creating synthetic data with \texttt{mice} in \texttt{R} [with Gerko Vink], UMCU, 4 November
+2022, Utrecht, the Netherlands.
+
+\end{itemize}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+
+\section{Publications}
+
+\begin{itemize}
+
+\item[$\circ$]\textbf{Volker, T. B.} \& Klugkist, I. (\textit{Submitted}). Combining support for hypotheses over heterogeneous studies with Bayesian Evidence Synthesis: A simulation study. \href{https://github.com/thomvolker/bes_master_thesis_ms/blob/main/manuscript_VK/manuscript_VK.pdf}{Paper}.
+
+\item[$\circ$] Klugkist, I. \& \textbf{Volker, T. B.} (\textit{Submitted}). Bayesian Evidence Synthesis for Informative Hypotheses: An introduction. \href{https://github.com/thomvolker/bes-intro-paper/blob/main/bes_intro_paper.pdf}{Paper}.
+
+\item[$\circ$] Van Leeuwen, A., Bagheri, A., \textbf{Volker, T. B.} \& Van Brakel, Charlotte (\textit{In press}). Verkenning van de inzet van topic modelling bij het analyseren van schrijfopdrachten in de context van de flipped classroom. [Exploring the use of topic modelling for the analysis of written assignments in a flipped classroom context.] \textit{Tijdschrift voor Hoger Onderwijs}. 
+
+\item[$\circ$] \textbf{Volker, T. B.} \& Vink, G. (2021). Anony\textit{mice}d Shareable Data: Using \texttt{mice} to Create and Analyze Multiply Imputed Synthetic Datasets. \textit{psych, 3}, 703-716. \href{https://www.mdpi.com/2624-8611/3/4/45}{Paper}.
+
+\item[$\circ$] \textbf{Volker, T. B.}, Buskens, V. \& Raub, W. (In preparation). The future is made today: Concerns for reputation foster trust and cooperation. \href{https://github.com/thomvolker/bes_master_thesis_sasr/blob/main/thesis/thesis_volker.pdf}{Paper}.
+\end{itemize}
+
+% \renewcommand{\refname}{Publications}
+% \nocite{*}
+% \bibliographystyle{apacite}
+% \bibliography{thom}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\section{Software Vignettes}
+
+\begin{itemize}
+\item[$\circ$] \textbf{Volker, T. B.} \& Vink, G. (2022). \texttt{futuremice}: The future starts today. \url{https://www.gerkovink.com/futuremice/Vignette_futuremice.html}
+\end{itemize}
+
+\section{Software development}
+
+\begin{itemize}
+
+\item[$\circ$] \texttt{mice} [ctb] - Developed functionality to pool inferences from synthetic data and implemented \texttt{futuremice} to speed up imputation by using user-friendly parallel processing.
+\item[$\circ$] \texttt{ggmice} [ctb] - Adjusted functionality to allow for visualization of synthetic data.
+  \end{itemize}
+
+
+%-----       letter       ---------------------------------------------------------
+
+\end{document}
+
+
+%% end of file `template.tex'.
