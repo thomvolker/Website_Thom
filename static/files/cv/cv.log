@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.31)  1 APR 2023 17:50
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.4.2)  2 APR 2023 14:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,25 +849,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 246--259
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
-
-Package rerunfilecheck Warning: File `cv.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `cv.out':
-(rerunfilecheck)             Before: 3526F8F90D663C82A735EF92C045067C;375
-(rerunfilecheck)             After:  DB7CEEAF0593BD2516D8E125D3982C71;1186.
+Package rerunfilecheck Info: File `cv.out' has not changed.
+(rerunfilecheck)             Checksum: DB7CEEAF0593BD2516D8E125D3982C71;1186.
  ) 
 Here is how much of TeX's memory you used:
- 27482 strings out of 478655
- 562896 string characters out of 5845995
+ 27482 strings out of 478654
+ 562896 string characters out of 5845988
  1883290 words of memory out of 5000000
  47125 multiletter control sequences out of 15000+600000
  515522 words of font info for 59 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 129i,12n,122p,995b,501s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 129i,11n,122p,995b,501s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on cv.pdf (3 pages).
